@@ -1,9 +1,9 @@
 package main
 
 import (
-	"TechnoRelyCourses/interactionDB"
-	"TechnoRelyCourses/logger"
-	"TechnoRelyCourses/logic"
+	"github.com/BigCodilo/Courses2/interactionDB"
+	"github.com/BigCodilo/Courses2/logger"
+	"github.com/BigCodilo/Courses2/logic"
 	"fmt"
 	"net/http"
 )
@@ -15,7 +15,6 @@ func main() {
 
 	DB = interactionDB.DataBase{}
 	err := DB.Open()
-	logger.Info.Println("connection with database opened")
 	if err != nil {
 		logger.Error.Println("problem with open connection with database", err)
 	}
@@ -26,7 +25,6 @@ func main() {
 			logger.Error.Println("problem with closing database", err)
 			return
 		}
-		logger.Info.Println("connection with database closed")
 	}(DB)
 
 	persons, err := logic.ParseCSV("csv-data/MOCK_DATA.csv")
@@ -70,6 +68,7 @@ func main() {
 	p1 := persons.GetPersentOFGender("Male")
 	p2 := persons.GetPersentOFGender("Female")
 	fmt.Println(p1, " ===>", p2)
+	fmt.Println()
 
 	fmt.Println("\n\n\n-----------------------------------------------------------------\n\n\n")
 	fmt.Println("Пользователи по диапазону займа\n")

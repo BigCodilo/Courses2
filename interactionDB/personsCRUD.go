@@ -1,7 +1,7 @@
 package interactionDB
 
 import (
-	"TechnoRelyCourses/logic"
+	"github.com/BigCodilo/Courses2/logic"
 	"database/sql"
 	"fmt"
 

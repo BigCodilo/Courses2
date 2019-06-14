@@ -1,8 +1,9 @@
 package main
 
 import (
-	"TechnoRelyCourses/logger"
-	"TechnoRelyCourses/logic"
+	"fmt"
+	"github.com/BigCodilo/Courses2/logger"
+	"github.com/BigCodilo/Courses2/logic"
 	"encoding/json"
 	"net/http"
 	"time"
@@ -10,6 +11,7 @@ import (
 
 
 func GetPersonHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("")
 	name := r.URL.Query().Get("name")
 	fromDate := r.URL.Query().Get("fromDate")
 	toDate := r.URL.Query().Get("toDate")
@@ -49,14 +51,14 @@ func GetPersonHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	if err != nil {
 		http.Error(w, "uncorrect date form", http.StatusNotFound)
-		logger.Info.Println("GET for", r.RequestURI, "unsuccessfully.")
+		logger.Debug.Println("GET for", r.RequestURI, "unsuccessfully.")
 		logger.Error.Println("GET for", r.RequestURI, "---", err, "---")
 		return
 	}
 	//Если ненайдено людей с удовлетворяющими требованиями то напишет об этом
 	if len(validPersons) == 0 {
 		http.Error(w, "no results for this query", http.StatusNotFound)
-		logger.Info.Println("GET for", r.RequestURI, "unsuccessfully.")
+		logger.Debug.Println("GET for", r.RequestURI, "unsuccessfully.")
 		logger.Error.Println("GET for", r.RequestURI, "---", err, "---")
 		return
 	}
@@ -67,7 +69,7 @@ func GetPersonHandler(w http.ResponseWriter, r *http.Request) {
 		logger.Error.Println("GET for", r.RequestURI, "---", err, "---")
 		return
 	}
-	logger.Info.Println("GET for", r.RequestURI, "successfully.")
+	logger.Debug.Println("GET for", r.RequestURI, "successfully.")
 	w.Write(validPersonsJSON)
 }
 
@@ -78,7 +80,7 @@ func AddPersonHandler(w http.ResponseWriter, r *http.Request) {
 	err := json.NewDecoder(r.Body).Decode(&person)
 	if err != nil {
 		http.Error(w, "uncorrect format", http.StatusBadRequest)
-		logger.Info.Println("POST with body ", person, "to", r.RequestURI, "unsuccessfully.")
+		logger.Debug.Println("POST with body ", person, "to", r.RequestURI, "unsuccessfully.")
 		logger.Error.Println("POST with body ", person, "to", r.RequestURI, "---", err, "---")
 		return
 	}
@@ -87,11 +89,11 @@ func AddPersonHandler(w http.ResponseWriter, r *http.Request) {
 	err = DB.Add(person)
 	if err != nil {
 		http.Error(w, "Problem with database", 418)
-		logger.Info.Println("POST with body ", person, "to", r.RequestURI, "unsuccessfully.")
+		logger.Debug.Println("POST with body ", person, "to", r.RequestURI, "unsuccessfully.")
 		logger.Error.Println("POST with body ", person, "to", r.RequestURI, "---", err, "---")
 		return
 	}
-	logger.Info.Println("POST with body ", person, "to", r.RequestURI, ". Added")
+	logger.Debug.Println("POST with body ", person, "to", r.RequestURI, ". Added")
 	w.Write([]byte("Answer from server: person added"))
 }
 
@@ -100,25 +102,25 @@ func DeletePersonHandler(w http.ResponseWriter, r *http.Request) {
 	err := json.NewDecoder(r.Body).Decode(&id)
 	if err != nil {
 		http.Error(w, "Uncorrect format -", http.StatusBadRequest)
-		logger.Info.Println("POST with body ", id, " to ", r.RequestURI, "unsuccessfully.")
+		logger.Debug.Println("POST with body ", id, " to ", r.RequestURI, "unsuccessfully.")
 		logger.Error.Println("POST with body ", id, "to", r.RequestURI, "---", err, "---")
 		return
 	}
 	//id, err := strconv.Atoi(idS)
 	if err != nil {
 		http.Error(w, "Uncorrect format", http.StatusBadRequest)
-		logger.Info.Println("POST with body ", id, " to ", r.RequestURI, "unsuccessfully.")
+		logger.Debug.Println("POST with body ", id, " to ", r.RequestURI, "unsuccessfully.")
 		logger.Error.Println("POST with body ", id, "to", r.RequestURI, "---", err, "---")
 		return
 	}
 	err = DB.Delete(id)
 	if err != nil {
 		http.Error(w, "Something wrong", 418)
-		logger.Info.Println("POST with body ", id, " to ", r.RequestURI, " unsuccessfully.")
+		logger.Debug.Println("POST with body ", id, " to ", r.RequestURI, " unsuccessfully.")
 		logger.Error.Println("POST with body ", id, "to", r.RequestURI, "---", err, "---")
 		return
 	}
-	logger.Info.Println("POST with body ", id, " to ", r.RequestURI, ". Deleted.")
+	logger.Debug.Println("POST with body ", id, " to ", r.RequestURI, ". Deleted.")
 	w.Write([]byte("user deleted"))
 }
 
@@ -132,17 +134,17 @@ func UpdatePersonHandler(w http.ResponseWriter, r *http.Request) {
 	err := json.NewDecoder(r.Body).Decode(&idPerson)
 	if err != nil {
 		http.Error(w, "Something wrong", 418)
-		logger.Info.Println("POST with body ", idPerson, " to ", r.RequestURI, "unsuccessfully.")
+		logger.Debug.Println("POST with body ", idPerson, " to ", r.RequestURI, "unsuccessfully.")
 		logger.Error.Println("POST with body ", idPerson, "to", r.RequestURI, "---", err, "---")
 		return
 	}
 	err = DB.Update(idPerson.ID, idPerson.Person)
 	if err != nil {
 		http.Error(w, "Something wrong", 418)
-		logger.Info.Println("POST with body ", idPerson, " to ", r.RequestURI, "unsuccessfully")
+		logger.Debug.Println("POST with body ", idPerson, " to ", r.RequestURI, "unsuccessfully")
 		logger.Error.Println("POST with body ", idPerson, "to", r.RequestURI, "---", err, "---")
 		return
 	}
-	logger.Info.Println("POST with body ", idPerson, " to ", r.RequestURI, ". Updated.")
+	logger.Debug.Println("POST with body ", idPerson, " to ", r.RequestURI, ". Updated.")
 	w.Write([]byte("update succeseful"))
 }
