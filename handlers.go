@@ -1,17 +1,17 @@
 package main
 
 import (
-	"fmt"
+	"encoding/json"
 	"github.com/BigCodilo/Courses2/logger"
 	"github.com/BigCodilo/Courses2/logic"
-	"encoding/json"
 	"net/http"
 	"time"
 )
 
 
 func GetPersonHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("")
+	logger.Debug.Print("GET for", r.RequestURI, "\n User agent: ", r.UserAgent())
+	logger.Info.Println("GET for", r.URL)
 	name := r.URL.Query().Get("name")
 	fromDate := r.URL.Query().Get("fromDate")
 	toDate := r.URL.Query().Get("toDate")
@@ -19,8 +19,9 @@ func GetPersonHandler(w http.ResponseWriter, r *http.Request) {
 	persons, err := DB.GetAllPersons()
 	if err != nil {
 		http.Error(w, "something wrong with database", http.StatusNotFound)
-		logger.Info.Println("GET for", r.RequestURI, "unsuccessfully.")
-		logger.Error.Println("GET for", r.RequestURI, "---", err, "---")
+		logger.Debug.Println( "unsuccessfully.\n")
+		logger.Info.Println( "unsuccessfully.\n")
+		logger.Error.Println("GET for", r.RequestURI, " ---", err, "---")
 		return
 	}
 	err = nil
@@ -51,25 +52,29 @@ func GetPersonHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	if err != nil {
 		http.Error(w, "uncorrect date form", http.StatusNotFound)
-		logger.Debug.Println("GET for", r.RequestURI, "unsuccessfully.")
-		logger.Error.Println("GET for", r.RequestURI, "---", err, "---")
+		logger.Debug.Println( "unsuccessfully.\n")
+		logger.Info.Println( "unsuccessfully.\n")
+		logger.Error.Println("GET for", r.RequestURI,  " ---", err, "---")
 		return
 	}
 	//Если ненайдено людей с удовлетворяющими требованиями то напишет об этом
 	if len(validPersons) == 0 {
 		http.Error(w, "no results for this query", http.StatusNotFound)
-		logger.Debug.Println("GET for", r.RequestURI, "unsuccessfully.")
-		logger.Error.Println("GET for", r.RequestURI, "---", err, "---")
+		logger.Debug.Println( "unsuccessfully.\n")
+		logger.Info.Println( "unsuccessfully.\n")
+		logger.Error.Println("GET for", r.RequestURI, " ---", err, "---")
 		return
 	}
 	validPersonsJSON, err := json.Marshal(validPersons)
 	if len(validPersons) == 0 {
 		http.Error(w, "json error", http.StatusNotFound)
-		logger.Info.Println("GET for", r.RequestURI, "unsuccessfully.")
-		logger.Error.Println("GET for", r.RequestURI, "---", err, "---")
+		logger.Debug.Println( "unsuccessfully.\n")
+		logger.Info.Println( "unsuccessfully.\n")
+		logger.Error.Println("GET for", r.RequestURI, " ---", err, "---")
 		return
 	}
-	logger.Debug.Println("GET for", r.RequestURI, "successfully.")
+	logger.Debug.Println( "successfully.\n")
+	logger.Info.Println( "successfully.\n")
 	w.Write(validPersonsJSON)
 }
 
@@ -78,10 +83,13 @@ func AddPersonHandler(w http.ResponseWriter, r *http.Request) {
 	person := logic.Person{}
 	//err := json.Unmarshal([]byte(personJSON), &person)
 	err := json.NewDecoder(r.Body).Decode(&person)
+	logger.Debug.Print("POST for", r.RequestURI, "\n User agent: ", r.UserAgent(), "/n Body: ", person)
+	logger.Info.Println("POST for", r.URL)
 	if err != nil {
 		http.Error(w, "uncorrect format", http.StatusBadRequest)
-		logger.Debug.Println("POST with body ", person, "to", r.RequestURI, "unsuccessfully.")
-		logger.Error.Println("POST with body ", person, "to", r.RequestURI, "---", err, "---")
+		logger.Debug.Println("unsuccessfully.\n")
+		logger.Info.Println("unsuccessfully.\n")
+		logger.Error.Println("POST with body ", person, "to", r.RequestURI, " ---", err, "---")
 		return
 	}
 	person.RegisterDate = time.Now()
@@ -89,38 +97,46 @@ func AddPersonHandler(w http.ResponseWriter, r *http.Request) {
 	err = DB.Add(person)
 	if err != nil {
 		http.Error(w, "Problem with database", 418)
-		logger.Debug.Println("POST with body ", person, "to", r.RequestURI, "unsuccessfully.")
-		logger.Error.Println("POST with body ", person, "to", r.RequestURI, "---", err, "---")
+		logger.Debug.Println("unsuccessfully.\n")
+		logger.Info.Println("unsuccessfully.\n")
+		logger.Error.Println("POST with body ", person, "to", r.RequestURI, " ---", err, "---")
 		return
 	}
-	logger.Debug.Println("POST with body ", person, "to", r.RequestURI, ". Added")
-	w.Write([]byte("Answer from server: person added"))
+	logger.Debug.Println("successfully\n")
+	logger.Info.Println("successfully\n")
+	w.Write([]byte("Person added"))
 }
 
 func DeletePersonHandler(w http.ResponseWriter, r *http.Request) {
 	var id int
 	err := json.NewDecoder(r.Body).Decode(&id)
+	logger.Debug.Print("POST for", r.RequestURI, "\n User agent: ", r.UserAgent(), "/n Body: ", id)
+	logger.Info.Println("POST for", r.URL)
 	if err != nil {
 		http.Error(w, "Uncorrect format -", http.StatusBadRequest)
-		logger.Debug.Println("POST with body ", id, " to ", r.RequestURI, "unsuccessfully.")
+		logger.Debug.Println("unsuccessfully.\n")
+		logger.Info.Println("unsuccessfully.\n")
 		logger.Error.Println("POST with body ", id, "to", r.RequestURI, "---", err, "---")
 		return
 	}
 	//id, err := strconv.Atoi(idS)
 	if err != nil {
 		http.Error(w, "Uncorrect format", http.StatusBadRequest)
-		logger.Debug.Println("POST with body ", id, " to ", r.RequestURI, "unsuccessfully.")
+		logger.Debug.Println("unsuccessfully.\n")
+		logger.Info.Println("unsuccessfully.\n")
 		logger.Error.Println("POST with body ", id, "to", r.RequestURI, "---", err, "---")
 		return
 	}
 	err = DB.Delete(id)
 	if err != nil {
 		http.Error(w, "Something wrong", 418)
-		logger.Debug.Println("POST with body ", id, " to ", r.RequestURI, " unsuccessfully.")
+		logger.Debug.Println("unsuccessfully.\n")
+		logger.Info.Println("unsuccessfully.\n")
 		logger.Error.Println("POST with body ", id, "to", r.RequestURI, "---", err, "---")
 		return
 	}
-	logger.Debug.Println("POST with body ", id, " to ", r.RequestURI, ". Deleted.")
+	logger.Debug.Println("successfully.\n")
+	logger.Info.Println("successfully.\n")
 	w.Write([]byte("user deleted"))
 }
 
@@ -129,22 +145,27 @@ func UpdatePersonHandler(w http.ResponseWriter, r *http.Request) {
 		ID     int          `json:"id"`
 		Person logic.Person `json:"person"`
 	}
-
 	idPerson := IDPerson{}
+
 	err := json.NewDecoder(r.Body).Decode(&idPerson)
+	logger.Debug.Print("POST for", r.RequestURI, "\n User agent: ", r.UserAgent(), "/n Body: ", idPerson)
+	logger.Info.Println("POST for", r.URL)
 	if err != nil {
 		http.Error(w, "Something wrong", 418)
-		logger.Debug.Println("POST with body ", idPerson, " to ", r.RequestURI, "unsuccessfully.")
+		logger.Debug.Println("unsuccessfully.\n")
+		logger.Info.Println("unsuccessfully.\n")
 		logger.Error.Println("POST with body ", idPerson, "to", r.RequestURI, "---", err, "---")
 		return
 	}
 	err = DB.Update(idPerson.ID, idPerson.Person)
 	if err != nil {
 		http.Error(w, "Something wrong", 418)
-		logger.Debug.Println("POST with body ", idPerson, " to ", r.RequestURI, "unsuccessfully")
+		logger.Debug.Println("unsuccessfully.\n")
+		logger.Info.Println("unsuccessfully.\n")
 		logger.Error.Println("POST with body ", idPerson, "to", r.RequestURI, "---", err, "---")
 		return
 	}
-	logger.Debug.Println("POST with body ", idPerson, " to ", r.RequestURI, ". Updated.")
+	logger.Debug.Println("successfully.\n")
+	logger.Info.Println("successfully.\n")
 	w.Write([]byte("update succeseful"))
 }

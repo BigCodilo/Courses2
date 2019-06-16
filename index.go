@@ -31,7 +31,7 @@ func main() {
 	if err != nil {
 		logger.Error.Println("problem with parcing CSV", err)
 	}
-	logger.Info.Println("trying parsed CSV file")
+	logger.Info.Println("trying parse CSV file")
 
 	//----- DATABASE ------//
 

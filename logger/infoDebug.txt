@@ -1,0 +1,118 @@
+DEBUG: 2019/06/16 10:25:38 handlers.go:70: GET for /persons?name=oleg 
+ User agent:  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36 
+ [::1]:50106 successfully.
+
+DEBUG: 2019/06/16 10:25:38 handlers.go:70: GET for /persons?name=oleg 
+ User agent:  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36 
+ [::1]:50106 successfully.
+
+DEBUG: 2019/06/16 10:25:38 handlers.go:70: GET for /persons?name=oleg 
+ User agent:  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36 
+ [::1]:50106 successfully.
+
+DEBUG: 2019/06/16 10:28:33 handlers.go:77: GET for /persons?name=oleg 
+ User agent:  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36 
+ ::1 successfully.
+
+DEBUG: 2019/06/16 10:28:33 handlers.go:77: GET for /persons?name=oleg 
+ User agent:  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36 
+ ::1 successfully.
+
+DEBUG: 2019/06/16 10:28:33 handlers.go:77: GET for /persons?name=oleg 
+ User agent:  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36 
+ ::1 successfully.
+
+DEBUG: 2019/06/16 10:28:34 handlers.go:77: GET for /persons?name=oleg 
+ User agent:  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36 
+ ::1 successfully.
+
+DEBUG: 2019/06/16 10:31:39 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/16 10:31:39 handlers.go:72: successfully.
+
+DEBUG: 2019/06/16 10:31:39 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/16 10:31:39 handlers.go:72: successfully.
+
+DEBUG: 2019/06/16 10:31:39 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/16 10:31:39 handlers.go:72: successfully.
+
+DEBUG: 2019/06/16 10:31:39 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/16 10:31:39 handlers.go:72: successfully.
+
+DEBUG: 2019/06/16 10:33:37 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/16 10:33:37 handlers.go:76: successfully.
+
+DEBUG: 2019/06/16 10:33:38 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/16 10:33:38 handlers.go:76: successfully.
+
+DEBUG: 2019/06/16 10:34:30 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/16 10:34:30 handlers.go:76: successfully.
+
+DEBUG: 2019/06/16 10:34:30 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/16 10:34:30 handlers.go:76: successfully.
+
+DEBUG: 2019/06/16 10:34:30 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/16 10:34:30 handlers.go:76: successfully.
+
+DEBUG: 2019/06/16 10:35:36 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36map[Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3] Accept-Encoding:[gzip, deflate, br] Accept-Language:[ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,la;q=0.5] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__io=477128cae.bb9b1f883_1548638926752; __io_lv=1548638926752; __io_unique_36028=28; _ga=GA1.1.1908184127.1548638927; _ym_d=1548638927; _ym_uid=1548638927373917260; used_adblock=adblock_disabled; optimizelyEndUserId=oeu1551447958792r0.06336616828202613; csrftoken=WX3a7gerxNWUdUUFN9wykQPDBFCChSNMnjcD8RxWqrGyTi7WxdUgYLGhoxGSPlG2] Proxy-Authorization:[Basic VVZQTnYxLTdsMXI1eGJ2YTNzMHZ1NXp5Z3phdjVpMWwweTRpZ3Q0JmpvaG5kb2VAdXZwbi5tZTpvN3I3cDA4Mml6cHNoZHp6eDBjeHNsZGVudmUzYmNyZg==] Upgrade-Insecure-Requests:[1] User-Agent:[Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36]]
+DEBUG: 2019/06/16 10:35:36 handlers.go:76: successfully.
+
+DEBUG: 2019/06/16 10:35:36 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36map[Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3] Accept-Encoding:[gzip, deflate, br] Accept-Language:[ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,la;q=0.5] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__io=477128cae.bb9b1f883_1548638926752; __io_lv=1548638926752; __io_unique_36028=28; _ga=GA1.1.1908184127.1548638927; _ym_d=1548638927; _ym_uid=1548638927373917260; used_adblock=adblock_disabled; optimizelyEndUserId=oeu1551447958792r0.06336616828202613; csrftoken=WX3a7gerxNWUdUUFN9wykQPDBFCChSNMnjcD8RxWqrGyTi7WxdUgYLGhoxGSPlG2] Proxy-Authorization:[Basic VVZQTnYxLTdsMXI1eGJ2YTNzMHZ1NXp5Z3phdjVpMWwweTRpZ3Q0JmpvaG5kb2VAdXZwbi5tZTpvN3I3cDA4Mml6cHNoZHp6eDBjeHNsZGVudmUzYmNyZg==] Upgrade-Insecure-Requests:[1] User-Agent:[Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36]]
+DEBUG: 2019/06/16 10:35:36 handlers.go:76: successfully.
+
+DEBUG: 2019/06/16 10:37:03 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+ Headers: map[Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3] Accept-Encoding:[gzip, deflate, br] Accept-Language:[ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,la;q=0.5] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__io=477128cae.bb9b1f883_1548638926752; __io_lv=1548638926752; __io_unique_36028=28; _ga=GA1.1.1908184127.1548638927; _ym_d=1548638927; _ym_uid=1548638927373917260; used_adblock=adblock_disabled; optimizelyEndUserId=oeu1551447958792r0.06336616828202613; csrftoken=WX3a7gerxNWUdUUFN9wykQPDBFCChSNMnjcD8RxWqrGyTi7WxdUgYLGhoxGSPlG2] Proxy-Authorization:[Basic VVZQTnYxLTdsMXI1eGJ2YTNzMHZ1NXp5Z3phdjVpMWwweTRpZ3Q0JmpvaG5kb2VAdXZwbi5tZTpvN3I3cDA4Mml6cHNoZHp6eDBjeHNsZGVudmUzYmNyZg==] Upgrade-Insecure-Requests:[1] User-Agent:[Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36]]
+context.Background.WithValue(&http.contextKey{name:"http-server"}, &http.Server{Addr:":1234", Handler:http.Handler(nil), TLSConfig:(*tls.Config)(0xc000080480), ReadTimeout:0, ReadHeaderTimeout:0, WriteTimeout:0, IdleTimeout:0, MaxHeaderBytes:0, TLSNextProto:map[string]func(*http.Server, *tls.Conn, http.Handler){"h2":(func(*http.Server, *tls.Conn, http.Handler))(0x687c50)}, ConnState:(func(net.Conn, http.ConnState))(nil), ErrorLog:(*log.Logger)(nil), disableKeepAlives:0, inShutdown:0, nextProtoOnce:sync.Once{m:sync.Mutex{state:0, sema:0x0}, done:0x1}, nextProtoErr:error(nil), mu:sync.Mutex{state:0, sema:0x0}, listeners:map[*net.Listener]struct {}{(*net.Listener)(0xc00003cd70):struct {}{}}, activeConn:map[*http.conn]struct {}{(*http.conn)(0xc00004aa00):struct {}{}, (*http.conn)(0xc00004aaa0):struct {}{}}, doneChan:(chan struct {})(nil), onShutdown:[]func(){(func())(0x695090)}}).WithValue(&http.contextKey{name:"local-addr"}, &net.TCPAddr{IP:net.IP{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}, Port:1234, Zone:""}).WithCancel.WithCancel
+DEBUG: 2019/06/16 10:37:03 handlers.go:76: successfully.
+
+DEBUG: 2019/06/16 10:37:03 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+ Headers: map[Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3] Accept-Encoding:[gzip, deflate, br] Accept-Language:[ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,la;q=0.5] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__io=477128cae.bb9b1f883_1548638926752; __io_lv=1548638926752; __io_unique_36028=28; _ga=GA1.1.1908184127.1548638927; _ym_d=1548638927; _ym_uid=1548638927373917260; used_adblock=adblock_disabled; optimizelyEndUserId=oeu1551447958792r0.06336616828202613; csrftoken=WX3a7gerxNWUdUUFN9wykQPDBFCChSNMnjcD8RxWqrGyTi7WxdUgYLGhoxGSPlG2] Proxy-Authorization:[Basic VVZQTnYxLTdsMXI1eGJ2YTNzMHZ1NXp5Z3phdjVpMWwweTRpZ3Q0JmpvaG5kb2VAdXZwbi5tZTpvN3I3cDA4Mml6cHNoZHp6eDBjeHNsZGVudmUzYmNyZg==] Upgrade-Insecure-Requests:[1] User-Agent:[Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36]]
+context.Background.WithValue(&http.contextKey{name:"http-server"}, &http.Server{Addr:":1234", Handler:http.Handler(nil), TLSConfig:(*tls.Config)(0xc000080480), ReadTimeout:0, ReadHeaderTimeout:0, WriteTimeout:0, IdleTimeout:0, MaxHeaderBytes:0, TLSNextProto:map[string]func(*http.Server, *tls.Conn, http.Handler){"h2":(func(*http.Server, *tls.Conn, http.Handler))(0x687c50)}, ConnState:(func(net.Conn, http.ConnState))(nil), ErrorLog:(*log.Logger)(nil), disableKeepAlives:0, inShutdown:0, nextProtoOnce:sync.Once{m:sync.Mutex{state:0, sema:0x0}, done:0x1}, nextProtoErr:error(nil), mu:sync.Mutex{state:0, sema:0x0}, listeners:map[*net.Listener]struct {}{(*net.Listener)(0xc00003cd70):struct {}{}}, activeConn:map[*http.conn]struct {}{(*http.conn)(0xc00004aa00):struct {}{}, (*http.conn)(0xc00004aaa0):struct {}{}}, doneChan:(chan struct {})(nil), onShutdown:[]func(){(func())(0x695090)}}).WithValue(&http.contextKey{name:"local-addr"}, &net.TCPAddr{IP:net.IP{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}, Port:1234, Zone:""}).WithCancel.WithCancel
+DEBUG: 2019/06/16 10:37:03 handlers.go:76: successfully.
+
+DEBUG: 2019/06/16 10:37:03 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+ Headers: map[Accept:[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3] Accept-Encoding:[gzip, deflate, br] Accept-Language:[ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6,la;q=0.5] Cache-Control:[max-age=0] Connection:[keep-alive] Cookie:[__io=477128cae.bb9b1f883_1548638926752; __io_lv=1548638926752; __io_unique_36028=28; _ga=GA1.1.1908184127.1548638927; _ym_d=1548638927; _ym_uid=1548638927373917260; used_adblock=adblock_disabled; optimizelyEndUserId=oeu1551447958792r0.06336616828202613; csrftoken=WX3a7gerxNWUdUUFN9wykQPDBFCChSNMnjcD8RxWqrGyTi7WxdUgYLGhoxGSPlG2] Proxy-Authorization:[Basic VVZQTnYxLTdsMXI1eGJ2YTNzMHZ1NXp5Z3phdjVpMWwweTRpZ3Q0JmpvaG5kb2VAdXZwbi5tZTpvN3I3cDA4Mml6cHNoZHp6eDBjeHNsZGVudmUzYmNyZg==] Upgrade-Insecure-Requests:[1] User-Agent:[Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36]]
+context.Background.WithValue(&http.contextKey{name:"http-server"}, &http.Server{Addr:":1234", Handler:http.Handler(nil), TLSConfig:(*tls.Config)(0xc000080480), ReadTimeout:0, ReadHeaderTimeout:0, WriteTimeout:0, IdleTimeout:0, MaxHeaderBytes:0, TLSNextProto:map[string]func(*http.Server, *tls.Conn, http.Handler){"h2":(func(*http.Server, *tls.Conn, http.Handler))(0x687c50)}, ConnState:(func(net.Conn, http.ConnState))(nil), ErrorLog:(*log.Logger)(nil), disableKeepAlives:0, inShutdown:0, nextProtoOnce:sync.Once{m:sync.Mutex{state:0, sema:0x0}, done:0x1}, nextProtoErr:error(nil), mu:sync.Mutex{state:0, sema:0x0}, listeners:map[*net.Listener]struct {}{(*net.Listener)(0xc00003cd70):struct {}{}}, activeConn:map[*http.conn]struct {}{(*http.conn)(0xc00004aa00):struct {}{}, (*http.conn)(0xc00004aaa0):struct {}{}}, doneChan:(chan struct {})(nil), onShutdown:[]func(){(func())(0x695090)}}).WithValue(&http.contextKey{name:"local-addr"}, &net.TCPAddr{IP:net.IP{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}, Port:1234, Zone:""}).WithCancel.WithCancel
+DEBUG: 2019/06/16 10:37:03 handlers.go:76: successfully.
+
+DEBUG: 2019/06/16 10:44:18 handlers.go:13: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/16 10:44:18 handlers.go:76: successfully.
+
+DEBUG: 2019/06/16 10:44:21 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/16 10:44:21 handlers.go:105: unsuccessfully
+
+DEBUG: 2019/06/16 10:44:21 handlers.go:112: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/16 10:44:21 handlers.go:137: successfully.
+
+DEBUG: 2019/06/16 10:44:21 handlers.go:149: POST for/update
+ User agent: Go-http-client/1.1/n Body: {112 {0 jeka  olegosyka@gmail.comcomcom Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}}
+DEBUG: 2019/06/16 10:44:21 handlers.go:166: successfully.
+
+DEBUG: 2019/06/16 10:46:29 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/16 10:46:29 handlers.go:105: unsuccessfully
+
+DEBUG: 2019/06/16 10:46:29 handlers.go:112: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/16 10:46:29 handlers.go:137: successfully.
+
+DEBUG: 2019/06/16 10:46:29 handlers.go:150: POST for/update
+ User agent: Go-http-client/1.1/n Body: {112 {0 jeka  olegosyka@gmail.comcomcom Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}}
+DEBUG: 2019/06/16 10:46:29 handlers.go:167: successfully.
+
