@@ -17,12 +17,13 @@ type Person struct {
 }
 
 func main() {
-	AddingTest()
-	DeleteTest()
-	UpdateTest()
+	fmt.Println(AddingTest())
+	fmt.Println(DeleteTest())
+	fmt.Println(UpdateTest())
+	fmt.Println(GetTest())
 }
 
-func AddingTest() {
+func AddingTest() string{
 	person := Person{
 		FirstName: "oleg1111",
 		LastName:  "osyka",
@@ -36,19 +37,19 @@ func AddingTest() {
 		fmt.Println(err)
 	}
 	body, _ := ioutil.ReadAll(resp.Body)
-	fmt.Println(string(body))
+	return string(body)
 }
 
-func DeleteTest() {
+func DeleteTest() string{
 	resp, err := http.Post("http://localhost:1234/delete", "application/json", bytes.NewReader([]byte("121")))
 	if err != nil {
 		fmt.Println(err)
 	}
 	body, _ := ioutil.ReadAll(resp.Body)
-	fmt.Println(string(body))
+	return string(body)
 }
 
-func UpdateTest() {
+func UpdateTest() string{
 	type IDPerson struct {
 		ID     int    `json:"id"`
 		Person Person `json:"person"`
@@ -68,5 +69,14 @@ func UpdateTest() {
 		fmt.Println(err)
 	}
 	body, _ := ioutil.ReadAll(resp.Body)
-	fmt.Println(string(body))
+	return string(body)
+}
+
+func GetTest() string{
+	resp, err := http.Get("http://localhost:1234/persons?name=o5leg")
+	if err != nil {
+		fmt.Println(err)
+	}
+	body, _ := ioutil.ReadAll(resp.Body)
+	return string(body)
 }

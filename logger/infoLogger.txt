@@ -99,3 +99,39 @@ INFO: 2019/06/16 10:46:29 handlers.go:138: successfully.
 INFO: 2019/06/16 10:46:29 handlers.go:151: POST for /update
 INFO: 2019/06/16 10:46:29 handlers.go:168: successfully.
 
+INFO: 2019/06/16 11:22:40 index.go:34: trying parse CSV file
+INFO: 2019/06/16 11:22:40 index.go:47: getted person with range from 07/28/2018 to 09/26/2018
+INFO: 2019/06/16 11:22:40 index.go:56: persons sorted by FirstName
+INFO: 2019/06/16 11:22:41 index.go:67: getted persent of Male or Female
+INFO: 2019/06/16 11:22:41 index.go:75: getted persons it LOAN range 300000:600000
+INFO: 2019/06/16 11:22:41 index.go:88: server started
+INFO: 2019/06/16 11:23:35 handlers.go:87: POST for /add
+INFO: 2019/06/16 11:26:53 handlers.go:87: POST for /add
+INFO: 2019/06/16 11:26:53 handlers.go:113: POST for /delete
+INFO: 2019/06/16 11:26:53 handlers.go:138: successfully.
+
+INFO: 2019/06/16 11:26:53 handlers.go:151: POST for /update
+INFO: 2019/06/16 11:26:53 handlers.go:168: successfully.
+
+INFO: 2019/06/16 11:26:59 handlers.go:87: POST for /add
+INFO: 2019/06/16 11:26:59 handlers.go:113: POST for /delete
+INFO: 2019/06/16 11:26:59 handlers.go:138: successfully.
+
+INFO: 2019/06/16 11:26:59 handlers.go:151: POST for /update
+INFO: 2019/06/16 11:26:59 handlers.go:168: successfully.
+
+INFO: 2019/06/16 11:29:16 index.go:34: trying parse CSV file
+INFO: 2019/06/16 11:29:16 index.go:47: getted person with range from 07/28/2018 to 09/26/2018
+INFO: 2019/06/16 11:29:16 index.go:56: persons sorted by FirstName
+INFO: 2019/06/16 11:29:16 index.go:67: getted persent of Male or Female
+INFO: 2019/06/16 11:29:16 index.go:75: getted persons it LOAN range 300000:600000
+INFO: 2019/06/16 11:29:16 index.go:88: server started
+INFO: 2019/06/16 11:29:28 handlers.go:87: POST for /add
+INFO: 2019/06/16 11:29:28 handlers.go:106: successfully
+
+INFO: 2019/06/16 11:29:28 handlers.go:114: POST for /delete
+INFO: 2019/06/16 11:29:28 handlers.go:139: successfully.
+
+INFO: 2019/06/16 11:29:28 handlers.go:152: POST for /update
+INFO: 2019/06/16 11:29:28 handlers.go:169: successfully.
+

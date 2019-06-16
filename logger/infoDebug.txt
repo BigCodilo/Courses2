@@ -116,3 +116,43 @@ DEBUG: 2019/06/16 10:46:29 handlers.go:150: POST for/update
  User agent: Go-http-client/1.1/n Body: {112 {0 jeka  olegosyka@gmail.comcomcom Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}}
 DEBUG: 2019/06/16 10:46:29 handlers.go:167: successfully.
 
+DEBUG: 2019/06/16 11:23:35 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/16 11:23:36 handlers.go:105: unsuccessfully
+
+DEBUG: 2019/06/16 11:26:53 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/16 11:26:53 handlers.go:105: unsuccessfully
+
+DEBUG: 2019/06/16 11:26:53 handlers.go:112: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/16 11:26:53 handlers.go:137: successfully.
+
+DEBUG: 2019/06/16 11:26:53 handlers.go:150: POST for/update
+ User agent: Go-http-client/1.1/n Body: {112 {0 jeka  olegosyka@gmail.comcomcom Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}}
+DEBUG: 2019/06/16 11:26:53 handlers.go:167: successfully.
+
+DEBUG: 2019/06/16 11:26:59 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/16 11:26:59 handlers.go:105: unsuccessfully
+
+DEBUG: 2019/06/16 11:26:59 handlers.go:112: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/16 11:26:59 handlers.go:137: successfully.
+
+DEBUG: 2019/06/16 11:26:59 handlers.go:150: POST for/update
+ User agent: Go-http-client/1.1/n Body: {112 {0 jeka  olegosyka@gmail.comcomcom Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}}
+DEBUG: 2019/06/16 11:26:59 handlers.go:167: successfully.
+
+DEBUG: 2019/06/16 11:29:28 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/16 11:29:28 handlers.go:105: successfully
+
+DEBUG: 2019/06/16 11:29:28 handlers.go:113: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/16 11:29:28 handlers.go:138: successfully.
+
+DEBUG: 2019/06/16 11:29:28 handlers.go:151: POST for/update
+ User agent: Go-http-client/1.1/n Body: {112 {0 jeka  olegosyka@gmail.comcomcom Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}}
+DEBUG: 2019/06/16 11:29:28 handlers.go:168: successfully.
+
