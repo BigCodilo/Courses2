@@ -1,0 +1,6 @@
+ERROR: 2019/06/16 11:38:34 handlers.go:65: GET for /persons?name=o5leg  --- <nil> ---
+ERROR: 2019/06/16 11:40:00 handlers.go:65: GET for /persons?name=o5leg  --- <nil> ---
+ERROR: 2019/06/17 12:11:33 handlers.go:65: GET for /persons?name=o5leg  --- <nil> ---
+ERROR: 2019/06/17 12:14:14 handlers.go:65: GET for /persons?name=o5leg  --- <nil> ---
+ERROR: 2019/06/17 12:19:03 handlers.go:65: GET for /persons?name=o5leg  --- <nil> ---
+ERROR: 2019/06/17 13:23:51 handlers.go:115: POST with body  0 to /persons --- strconv.Atoi: parsing "": invalid syntax ---

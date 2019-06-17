@@ -48,28 +48,25 @@ func (db *DataBase) Delete(id int) error {
 	return nil
 }
 
-func (db *DataBase) Update(id int, person logic.Person) error {
-	personFromDB, err := db.GetPerson(id)
-	if err != nil {
-		return err
-	}
-	if len(person.FirstName) == 0 {
-		person.FirstName = personFromDB.FirstName
-	}
-	if len(person.Email) == 0 {
-		person.Email = personFromDB.Email
-	}
-	if len(person.Gender) == 0 {
-		person.Gender = personFromDB.Gender
-	}
-	if person.Loan == 0.0 {
-		person.Loan = personFromDB.Loan
-	}
-	_, err = db.DB.Exec("update Persons set firstname = $1, email = $2, gender = $3, loan = $4 where id = $5",
-		person.FirstName,
-		person.Email,
-		person.Gender,
-		person.Loan,
+func (db *DataBase) Update(id int, email string) error {
+	//personFromDB, err := db.GetPerson(id)
+	//if err != nil {
+	//	return err
+	//}
+	//if len(person.FirstName) == 0 {
+	//	person.FirstName = personFromDB.FirstName
+	//}
+	//if len(person.Email) == 0 {
+	//	person.Email = personFromDB.Email
+	//}
+	//if len(person.Gender) == 0 {
+	//	person.Gender = personFromDB.Gender
+	//}
+	//if person.Loan == 0.0 {
+	//	person.Loan = personFromDB.Loan
+	//}
+	_, err := db.DB.Exec("update Persons set email = $1 where id = $2",
+		email,
 		id,
 	)
 	if err != nil {

@@ -2,6 +2,7 @@ module github.com/BigCodilo/Courses2
 
 require (
 	github.com/gopherjs/gopherjs v0.0.0-20190430165422-3e4dfb77656c // indirect
+	github.com/gorilla/mux v1.7.2 // indirect
 	github.com/lib/pq v1.1.1
 	github.com/lukehoban/go-find-references v0.0.0-20150918174914-42505ef666d1 // indirect
 	github.com/lukehoban/go-outline v0.0.0-20161011150102-e78556874252 // indirect

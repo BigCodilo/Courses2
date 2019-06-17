@@ -156,3 +156,255 @@ DEBUG: 2019/06/16 11:29:28 handlers.go:151: POST for/update
  User agent: Go-http-client/1.1/n Body: {112 {0 jeka  olegosyka@gmail.comcomcom Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}}
 DEBUG: 2019/06/16 11:29:28 handlers.go:168: successfully.
 
+DEBUG: 2019/06/16 11:35:29 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/16 11:35:29 handlers.go:105: successfully
+
+DEBUG: 2019/06/16 11:35:29 handlers.go:113: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/16 11:35:29 handlers.go:138: successfully.
+
+DEBUG: 2019/06/16 11:35:29 handlers.go:151: POST for/update
+ User agent: Go-http-client/1.1/n Body: {112 {0 jeka  olegosyka@gmail.comcomcom Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}}
+DEBUG: 2019/06/16 11:35:29 handlers.go:168: successfully.
+
+DEBUG: 2019/06/16 11:35:41 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/16 11:35:41 handlers.go:105: successfully
+
+DEBUG: 2019/06/16 11:35:41 handlers.go:113: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/16 11:35:41 handlers.go:138: successfully.
+
+DEBUG: 2019/06/16 11:35:41 handlers.go:151: POST for/update
+ User agent: Go-http-client/1.1/n Body: {112 {0 jeka  olegosyka@gmail.comcomcom Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}}
+DEBUG: 2019/06/16 11:35:41 handlers.go:168: successfully.
+
+DEBUG: 2019/06/16 11:38:14 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/16 11:38:14 handlers.go:105: successfully
+
+DEBUG: 2019/06/16 11:38:14 handlers.go:113: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/16 11:38:14 handlers.go:138: successfully.
+
+DEBUG: 2019/06/16 11:38:14 handlers.go:151: POST for/update
+ User agent: Go-http-client/1.1/n Body: {112 {0 jeka  olegosyka@gmail.comcomcom Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}}
+DEBUG: 2019/06/16 11:38:14 handlers.go:168: successfully.
+
+DEBUG: 2019/06/16 11:38:14 handlers.go:13: GET for/persons?name=oleg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/16 11:38:14 handlers.go:76: successfully.
+
+DEBUG: 2019/06/16 11:38:34 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/16 11:38:34 handlers.go:105: successfully
+
+DEBUG: 2019/06/16 11:38:34 handlers.go:113: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/16 11:38:34 handlers.go:138: successfully.
+
+DEBUG: 2019/06/16 11:38:34 handlers.go:151: POST for/update
+ User agent: Go-http-client/1.1/n Body: {112 {0 jeka  olegosyka@gmail.comcomcom Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}}
+DEBUG: 2019/06/16 11:38:34 handlers.go:168: successfully.
+
+DEBUG: 2019/06/16 11:38:34 handlers.go:13: GET for/persons?name=o5leg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/16 11:38:34 handlers.go:63: unsuccessfully.
+
+DEBUG: 2019/06/16 11:40:00 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/16 11:40:00 handlers.go:105: successfully
+
+DEBUG: 2019/06/16 11:40:00 handlers.go:113: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/16 11:40:00 handlers.go:138: successfully.
+
+DEBUG: 2019/06/16 11:40:00 handlers.go:151: POST for/update
+ User agent: Go-http-client/1.1/n Body: {112 {0 jeka  olegosyka@gmail.comcomcom Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}}
+DEBUG: 2019/06/16 11:40:00 handlers.go:168: successfully.
+
+DEBUG: 2019/06/16 11:40:00 handlers.go:13: GET for/persons?name=o5leg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/16 11:40:00 handlers.go:63: unsuccessfully.
+
+DEBUG: 2019/06/17 12:11:32 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/17 12:11:33 handlers.go:105: successfully
+
+DEBUG: 2019/06/17 12:11:33 handlers.go:113: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/17 12:11:33 handlers.go:138: successfully.
+
+DEBUG: 2019/06/17 12:11:33 handlers.go:151: PUT for/update
+ User agent: Go-http-client/1.1/n Body: {112 }
+DEBUG: 2019/06/17 12:11:33 handlers.go:168: successfully.
+
+DEBUG: 2019/06/17 12:11:33 handlers.go:13: GET for/persons?name=o5leg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/17 12:11:33 handlers.go:63: unsuccessfully.
+
+DEBUG: 2019/06/17 12:14:13 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/17 12:14:14 handlers.go:105: successfully
+
+DEBUG: 2019/06/17 12:14:14 handlers.go:113: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/17 12:14:14 handlers.go:138: successfully.
+
+DEBUG: 2019/06/17 12:14:14 handlers.go:151: PUT for/update
+ User agent: Go-http-client/1.1/n Body: {112 }
+DEBUG: 2019/06/17 12:14:14 handlers.go:169: successfully.
+
+DEBUG: 2019/06/17 12:14:14 handlers.go:13: GET for/persons?name=o5leg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/17 12:14:14 handlers.go:63: unsuccessfully.
+
+DEBUG: 2019/06/17 12:19:03 handlers.go:86: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/17 12:19:03 handlers.go:105: successfully
+
+DEBUG: 2019/06/17 12:19:03 handlers.go:113: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/17 12:19:03 handlers.go:138: successfully.
+
+DEBUG: 2019/06/17 12:19:03 handlers.go:151: PUT for/update
+ User agent: Go-http-client/1.1/n Body: {112 }
+DEBUG: 2019/06/17 12:19:03 handlers.go:169: successfully.
+
+DEBUG: 2019/06/17 12:19:03 handlers.go:13: GET for/persons?name=o5leg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/17 12:19:03 handlers.go:63: unsuccessfully.
+
+DEBUG: 2019/06/17 12:26:14 handlers.go:80: POST for/add
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/17 12:26:14 handlers.go:99: successfully
+
+DEBUG: 2019/06/17 12:26:14 handlers.go:107: POST for/delete
+ User agent: Go-http-client/1.1/n Body: 121
+DEBUG: 2019/06/17 12:26:14 handlers.go:132: successfully.
+
+DEBUG: 2019/06/17 12:26:14 handlers.go:145: PUT for/update
+ User agent: Go-http-client/1.1/n Body: {112 }
+DEBUG: 2019/06/17 12:26:14 handlers.go:163: successfully.
+
+DEBUG: 2019/06/17 12:26:14 handlers.go:14: GET for/persons?name=oleg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/17 12:26:14 handlers.go:70: successfully.
+
+DEBUG: 2019/06/17 13:11:30 handlers.go:87: POST for/persons
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/17 13:11:31 handlers.go:106: successfully
+
+DEBUG: 2019/06/17 13:11:31 handlers.go:18: GET for/persons?name=oleg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/17 13:11:31 handlers.go:74: successfully.
+
+DEBUG: 2019/06/17 13:16:33 handlers.go:87: POST for/persons
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/17 13:16:33 handlers.go:106: successfully
+
+DEBUG: 2019/06/17 13:16:33 handlers.go:18: GET for/persons?name=oleg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/17 13:16:33 handlers.go:74: successfully.
+
+DEBUG: 2019/06/17 13:18:08 handlers.go:82: POST for/persons
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/17 13:18:08 handlers.go:101: successfully
+
+DEBUG: 2019/06/17 13:18:09 handlers.go:15: GET for/persons?name=oleg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/17 13:18:09 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:19:16 handlers.go:82: POST for/persons
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/17 13:19:16 handlers.go:101: successfully
+
+DEBUG: 2019/06/17 13:19:16 handlers.go:15: GET for/persons?name=oleg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/17 13:19:16 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:20:28 handlers.go:15: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/17 13:20:28 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:20:51 handlers.go:82: POST for/persons
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/17 13:20:51 handlers.go:101: successfully
+
+DEBUG: 2019/06/17 13:20:51 handlers.go:15: GET for/persons?name=oleg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/17 13:20:51 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:20:54 handlers.go:15: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/17 13:20:54 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:20:55 handlers.go:15: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/17 13:20:55 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:20:55 handlers.go:15: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/17 13:20:55 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:20:55 handlers.go:15: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/17 13:20:55 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:20:55 handlers.go:15: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/17 13:20:55 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:22:14 handlers.go:82: POST for/persons
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/17 13:22:14 handlers.go:101: successfully
+
+DEBUG: 2019/06/17 13:22:14 handlers.go:147: PUT for/persons
+ User agent: Go-http-client/1.1/n Body: {113 qweqweqwewqeqweqeqwewqewqewqeqwe}
+DEBUG: 2019/06/17 13:22:14 handlers.go:165: successfully.
+
+DEBUG: 2019/06/17 13:22:14 handlers.go:15: GET for/persons?name=oleg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/17 13:22:14 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:22:20 handlers.go:15: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/17 13:22:20 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:23:51 handlers.go:82: POST for/persons
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/17 13:23:51 handlers.go:101: successfully
+
+DEBUG: 2019/06/17 13:23:51 handlers.go:109: POST for/persons
+ User agent: Go-http-client/1.1/n Body: 0
+DEBUG: 2019/06/17 13:23:51 handlers.go:113: unsuccessfully.
+
+DEBUG: 2019/06/17 13:23:51 handlers.go:147: PUT for/persons
+ User agent: Go-http-client/1.1/n Body: {113 qweqweqwewqeqweqeqwewqewqewqeqwe}
+DEBUG: 2019/06/17 13:23:51 handlers.go:165: successfully.
+
+DEBUG: 2019/06/17 13:23:51 handlers.go:15: GET for/persons?name=oleg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/17 13:23:51 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:24:48 handlers.go:82: POST for/persons
+ User agent: Go-http-client/1.1/n Body: {0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+DEBUG: 2019/06/17 13:24:48 handlers.go:101: successfully
+
+DEBUG: 2019/06/17 13:24:48 handlers.go:109: POST for/persons?id=117
+ User agent: Go-http-client/1.1/n Body: 117
+DEBUG: 2019/06/17 13:24:48 handlers.go:134: successfully.
+
+DEBUG: 2019/06/17 13:24:48 handlers.go:147: PUT for/persons
+ User agent: Go-http-client/1.1/n Body: {113 qweqweqwewqeqweqeqwewqewqewqeqwe}
+DEBUG: 2019/06/17 13:24:48 handlers.go:165: successfully.
+
+DEBUG: 2019/06/17 13:24:48 handlers.go:15: GET for/persons?name=oleg
+ User agent: Go-http-client/1.1
+DEBUG: 2019/06/17 13:24:48 handlers.go:71: successfully.
+
+DEBUG: 2019/06/17 13:24:51 handlers.go:15: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+DEBUG: 2019/06/17 13:24:51 handlers.go:71: successfully.
+

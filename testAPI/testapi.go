@@ -32,7 +32,7 @@ func AddingTest() string{
 		Loan:      254.3,
 	}
 	personJSON, _ := json.Marshal(person)
-	resp, err := http.Post("http://localhost:1234/add", "application/json", bytes.NewReader(personJSON))
+	resp, err := http.Post("http://localhost:1234/persons", "application/json", bytes.NewReader(personJSON))
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -41,30 +41,42 @@ func AddingTest() string{
 }
 
 func DeleteTest() string{
-	resp, err := http.Post("http://localhost:1234/delete", "application/json", bytes.NewReader([]byte("121")))
+	//id := "117"
+	//resp, err := http.Post("http://localhost:1234/delete", "application/json", bytes.NewReader([]byte(id)))
+	//if err != nil {
+	//	fmt.Println(err)
+	//}
+	//body, _ := ioutil.ReadAll(resp.Body)
+	//return string(body)
+	//idJSON, _ := json.Marshal(id)
+	client := &http.Client{}
+	req, err := http.NewRequest(
+		"DELETE", "http://localhost:1234/persons?id=117", nil,
+	)
+	resp, err := client.Do(req)
 	if err != nil {
 		fmt.Println(err)
 	}
 	body, _ := ioutil.ReadAll(resp.Body)
 	return string(body)
+	return "q"
 }
 
 func UpdateTest() string{
-	type IDPerson struct {
+	type IDEmail struct {
 		ID     int    `json:"id"`
-		Person Person `json:"person"`
+		Email string `json:"email"`
 	}
-	idPerson := IDPerson{
-		ID: 112,
-		Person: Person{
-			FirstName: "jeka",
-			Email:     "olegosyka@gmail.comcomcom",
-			Gender:    "Male",
-			Loan:      254.3,
-		},
+	idEmail := IDEmail{
+		ID: 113,
+		Email: "qweqweqwewqeqweqeqwewqewqewqeqwe",
 	}
-	idPersonJSON, _ := json.Marshal(idPerson)
-	resp, err := http.Post("http://localhost:1234/update", "application/json", bytes.NewReader(idPersonJSON))
+	idPersonJSON, _ := json.Marshal(idEmail)
+	client := &http.Client{}
+	req, err := http.NewRequest(
+		"PUT", "http://localhost:1234/persons", bytes.NewReader(idPersonJSON),
+	)
+	resp, err := client.Do(req)
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -73,7 +85,7 @@ func UpdateTest() string{
 }
 
 func GetTest() string{
-	resp, err := http.Get("http://localhost:1234/persons?name=o5leg")
+	resp, err := http.Get("http://localhost:1234/persons?name=oleg")
 	if err != nil {
 		fmt.Println(err)
 	}

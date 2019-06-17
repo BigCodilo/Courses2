@@ -6,6 +6,7 @@ import (
 	"github.com/BigCodilo/Courses2/logic"
 	"fmt"
 	"net/http"
+	"github.com/gorilla/mux"
 )
 
 var DB interactionDB.DataBase
@@ -81,10 +82,12 @@ func main() {
 }
 
 func StartServer() {
-	http.HandleFunc("/persons", GetPersonHandler)
-	http.HandleFunc("/add", AddPersonHandler)
-	http.HandleFunc("/delete", DeletePersonHandler)
-	http.HandleFunc("/update", UpdatePersonHandler)
+	route := mux.NewRouter()
+	route.HandleFunc("/persons", GetPersonHandler).Methods("GET")
+	route.HandleFunc("/persons", AddPersonHandler).Methods("POST")
+	route.HandleFunc("/persons", DeletePersonHandler).Methods("DELETE")
+	route.HandleFunc("/persons", UpdatePersonHandler).Methods("PUT")
 	logger.Info.Println("server started")
+	http.Handle("/", route)
 	http.ListenAndServe(":1234", nil)
 }

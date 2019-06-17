@@ -2,9 +2,11 @@ package main
 
 import (
 	"encoding/json"
+	"errors"
 	"github.com/BigCodilo/Courses2/logger"
 	"github.com/BigCodilo/Courses2/logic"
 	"net/http"
+	"strconv"
 	"time"
 )
 
@@ -62,23 +64,17 @@ func GetPersonHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "no results for this query", http.StatusNotFound)
 		logger.Debug.Println( "unsuccessfully.\n")
 		logger.Info.Println( "unsuccessfully.\n")
-		logger.Error.Println("GET for", r.RequestURI, " ---", err, "---")
+		logger.Error.Println("GET for", r.RequestURI, " ---", errors.New("no valid persons"), "---")
 		return
 	}
 	validPersonsJSON, err := json.Marshal(validPersons)
-	if len(validPersons) == 0 {
-		http.Error(w, "json error", http.StatusNotFound)
-		logger.Debug.Println( "unsuccessfully.\n")
-		logger.Info.Println( "unsuccessfully.\n")
-		logger.Error.Println("GET for", r.RequestURI, " ---", err, "---")
-		return
-	}
 	logger.Debug.Println( "successfully.\n")
 	logger.Info.Println( "successfully.\n")
 	w.Write(validPersonsJSON)
 }
 
 func AddPersonHandler(w http.ResponseWriter, r *http.Request) {
+
 	//personJSON := r.FormValue("person")
 	person := logic.Person{}
 	//err := json.Unmarshal([]byte(personJSON), &person)
@@ -108,8 +104,8 @@ func AddPersonHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func DeletePersonHandler(w http.ResponseWriter, r *http.Request) {
-	var id int
-	err := json.NewDecoder(r.Body).Decode(&id)
+	idS := r.URL.Query().Get("id")
+	id, err := strconv.Atoi(idS)
 	logger.Debug.Print("POST for", r.RequestURI, "\n User agent: ", r.UserAgent(), "/n Body: ", id)
 	logger.Info.Println("POST for", r.URL)
 	if err != nil {
@@ -141,31 +137,36 @@ func DeletePersonHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func UpdatePersonHandler(w http.ResponseWriter, r *http.Request) {
-	type IDPerson struct {
+	type IDEmail struct {
 		ID     int          `json:"id"`
-		Person logic.Person `json:"person"`
+		Email string `json:"email"`
 	}
-	idPerson := IDPerson{}
+	idEmail := IDEmail{}
 
-	err := json.NewDecoder(r.Body).Decode(&idPerson)
-	logger.Debug.Print("POST for", r.RequestURI, "\n User agent: ", r.UserAgent(), "/n Body: ", idPerson)
-	logger.Info.Println("POST for", r.URL)
+	err := json.NewDecoder(r.Body).Decode(&idEmail)
+	logger.Debug.Print("PUT for", r.RequestURI, "\n User agent: ", r.UserAgent(), "/n Body: ", idEmail)
+	logger.Info.Println("PUT for", r.URL)
 	if err != nil {
 		http.Error(w, "Something wrong", 418)
 		logger.Debug.Println("unsuccessfully.\n")
 		logger.Info.Println("unsuccessfully.\n")
-		logger.Error.Println("POST with body ", idPerson, "to", r.RequestURI, "---", err, "---")
+		logger.Error.Println("PUT with body ", idEmail, "to", r.RequestURI, "---", err, "---")
 		return
 	}
-	err = DB.Update(idPerson.ID, idPerson.Person)
+	//err = DB.Update(idEmail.ID, idEmail.Email)
+	err = DB.Update(idEmail.ID, idEmail.Email)
 	if err != nil {
 		http.Error(w, "Something wrong", 418)
 		logger.Debug.Println("unsuccessfully.\n")
 		logger.Info.Println("unsuccessfully.\n")
-		logger.Error.Println("POST with body ", idPerson, "to", r.RequestURI, "---", err, "---")
+		logger.Error.Println("PUT with body ", idEmail, "to", r.RequestURI, "---", err, "---")
 		return
 	}
 	logger.Debug.Println("successfully.\n")
 	logger.Info.Println("successfully.\n")
 	w.Write([]byte("update succeseful"))
+}
+
+func RouteHandlers(w http.ResponseWriter, r *http.Request){
+
 }
