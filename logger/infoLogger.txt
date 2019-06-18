@@ -389,3 +389,684 @@ INFO: 2019/06/17 13:24:48 handlers.go:72: successfully.
 INFO: 2019/06/17 13:24:51 handlers.go:16: GET for /persons?name=oleg
 INFO: 2019/06/17 13:24:51 handlers.go:72: successfully.
 
+INFO: 2019/06/17 13:27:06 index.go:35: trying parse CSV file
+INFO: 2019/06/17 13:27:06 index.go:48: getted person with range from 07/28/2018 to 09/26/2018
+INFO: 2019/06/17 13:27:06 index.go:57: persons sorted by FirstName
+INFO: 2019/06/17 13:27:07 index.go:68: getted persent of Male or Female
+INFO: 2019/06/17 13:27:07 index.go:76: getted persons it LOAN range 300000:600000
+INFO: 2019/06/17 13:27:07 index.go:90: server started
+INFO: 2019/06/17 13:27:25 handlers.go:16: GET for /persons?gender=Male
+INFO: 2019/06/17 13:27:25 handlers.go:72: successfully.
+
+INFO: 2019/06/17 13:27:38 handlers.go:16: GET for /persons?gender=Female
+INFO: 2019/06/17 13:27:38 handlers.go:72: successfully.
+
+INFO: 2019/06/17 13:28:22 handlers.go:16: GET for /persons?gender=Female&toDate=1/2/2018
+INFO: 2019/06/17 13:28:22 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/17 13:28:29 handlers.go:16: GET for /persons?gender=Female&toDate=01/02/2018
+INFO: 2019/06/17 13:28:29 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/17 13:28:37 handlers.go:16: GET for /persons?gender=Female&toDate=08/08/2018
+INFO: 2019/06/17 13:28:37 handlers.go:72: successfully.
+
+INFO: 2019/06/17 13:29:26 handlers.go:83: POST for /persons
+INFO: 2019/06/17 13:29:26 handlers.go:102: successfully
+
+INFO: 2019/06/17 13:29:26 handlers.go:110: POST for /persons?id=117
+INFO: 2019/06/17 13:29:26 handlers.go:135: successfully.
+
+INFO: 2019/06/17 13:29:26 handlers.go:148: PUT for /persons
+INFO: 2019/06/17 13:29:26 handlers.go:166: successfully.
+
+INFO: 2019/06/17 13:29:26 handlers.go:16: GET for /persons?name=oleg
+INFO: 2019/06/17 13:29:26 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:06:10 index.go:35: trying parse CSV file
+INFO: 2019/06/18 16:06:10 index.go:48: getted person with range from 07/28/2018 to 09/26/2018
+INFO: 2019/06/18 16:06:10 index.go:57: persons sorted by FirstName
+INFO: 2019/06/18 16:06:10 index.go:68: getted persent of Male or Female
+INFO: 2019/06/18 16:06:10 index.go:76: getted persons it LOAN range 300000:600000
+INFO: 2019/06/18 16:06:10 index.go:90: server started
+INFO: 2019/06/18 16:06:24 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:06:25 handlers.go:102: successfully
+
+INFO: 2019/06/18 16:18:51 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:18:51 handlers.go:102: successfully
+
+INFO: 2019/06/18 16:18:51 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:18:51 handlers.go:87: unsuccessfully.
+
+INFO: 2019/06/18 16:20:10 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:20:10 handlers.go:102: successfully
+
+INFO: 2019/06/18 16:20:10 handlers.go:110: POST for /persons?id=117
+INFO: 2019/06/18 16:20:11 handlers.go:135: successfully.
+
+INFO: 2019/06/18 16:20:11 handlers.go:148: PUT for /persons
+INFO: 2019/06/18 16:20:11 handlers.go:166: successfully.
+
+INFO: 2019/06/18 16:20:11 handlers.go:16: GET for /persons?name=oleg
+INFO: 2019/06/18 16:20:11 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:20:41 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:20:41 handlers.go:102: successfully
+
+INFO: 2019/06/18 16:20:41 handlers.go:110: POST for /persons?id=117
+INFO: 2019/06/18 16:20:41 handlers.go:135: successfully.
+
+INFO: 2019/06/18 16:20:41 handlers.go:148: PUT for /persons
+INFO: 2019/06/18 16:20:41 handlers.go:166: successfully.
+
+INFO: 2019/06/18 16:20:41 handlers.go:16: GET for /persons?name=oleg
+INFO: 2019/06/18 16:20:41 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:20:41 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:20:41 handlers.go:87: unsuccessfully.
+
+INFO: 2019/06/18 16:21:17 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:21:17 handlers.go:102: successfully
+
+INFO: 2019/06/18 16:21:17 handlers.go:110: POST for /persons?id=117
+INFO: 2019/06/18 16:21:17 handlers.go:135: successfully.
+
+INFO: 2019/06/18 16:21:17 handlers.go:148: PUT for /persons
+INFO: 2019/06/18 16:21:17 handlers.go:166: successfully.
+
+INFO: 2019/06/18 16:21:17 handlers.go:16: GET for /persons?name=oleg
+INFO: 2019/06/18 16:21:17 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:21:17 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:21:17 handlers.go:87: unsuccessfully.
+
+INFO: 2019/06/18 16:22:31 index.go:35: trying parse CSV file
+INFO: 2019/06/18 16:22:31 index.go:48: getted person with range from 07/28/2018 to 09/26/2018
+INFO: 2019/06/18 16:22:31 index.go:57: persons sorted by FirstName
+INFO: 2019/06/18 16:22:31 index.go:68: getted persent of Male or Female
+INFO: 2019/06/18 16:22:31 index.go:76: getted persons it LOAN range 300000:600000
+INFO: 2019/06/18 16:22:31 index.go:90: server started
+INFO: 2019/06/18 16:22:34 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:22:34 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:22:34 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 16:22:34 handlers.go:136: successfully.
+
+INFO: 2019/06/18 16:22:34 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:22:34 handlers.go:167: successfully.
+
+INFO: 2019/06/18 16:22:34 handlers.go:16: GET for /persons?name=oleg
+INFO: 2019/06/18 16:22:34 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:22:34 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:22:34 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 16:22:50 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:22:50 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:22:50 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:22:50 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 16:29:52 index.go:35: trying parse CSV file
+INFO: 2019/06/18 16:29:52 index.go:48: getted person with range from 07/28/2018 to 09/26/2018
+INFO: 2019/06/18 16:29:52 index.go:57: persons sorted by FirstName
+INFO: 2019/06/18 16:29:52 index.go:68: getted persent of Male or Female
+INFO: 2019/06/18 16:29:52 index.go:76: getted persons it LOAN range 300000:600000
+INFO: 2019/06/18 16:29:52 index.go:90: server started
+INFO: 2019/06/18 16:29:59 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:29:59 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:29:59 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:29:59 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 16:29:59 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:29:59 handlers.go:168: successfully.
+
+INFO: 2019/06/18 16:29:59 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:29:59 handlers.go:168: successfully.
+
+INFO: 2019/06/18 16:30:29 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:30:29 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:30:29 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:30:29 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 16:30:29 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:30:29 handlers.go:168: successfully.
+
+INFO: 2019/06/18 16:30:29 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:30:29 handlers.go:168: successfully.
+
+INFO: 2019/06/18 16:30:53 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:30:53 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:30:53 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:30:53 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 16:30:53 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:30:53 handlers.go:168: successfully.
+
+INFO: 2019/06/18 16:30:53 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:30:53 handlers.go:168: successfully.
+
+INFO: 2019/06/18 16:31:35 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:31:35 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:31:35 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:31:35 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 16:31:35 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:31:35 handlers.go:168: successfully.
+
+INFO: 2019/06/18 16:31:35 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:31:35 handlers.go:168: successfully.
+
+INFO: 2019/06/18 16:32:52 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:32:52 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:32:52 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 16:32:52 handlers.go:136: successfully.
+
+INFO: 2019/06/18 16:32:52 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:32:52 handlers.go:168: successfully.
+
+INFO: 2019/06/18 16:32:52 handlers.go:16: GET for /persons?name=oleg
+INFO: 2019/06/18 16:32:52 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:32:52 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:32:52 handlers.go:168: successfully.
+
+INFO: 2019/06/18 16:33:24 handlers.go:16: GET for /persons?name=oleg
+INFO: 2019/06/18 16:33:24 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:34:11 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:34:11 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:34:11 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:34:11 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 16:34:11 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:34:11 handlers.go:168: successfully.
+
+INFO: 2019/06/18 16:34:11 handlers.go:149: PUT for /persons
+INFO: 2019/06/18 16:34:11 handlers.go:154: unsuccessfully.
+
+INFO: 2019/06/18 16:38:25 index.go:35: trying parse CSV file
+INFO: 2019/06/18 16:38:25 index.go:48: getted person with range from 07/28/2018 to 09/26/2018
+INFO: 2019/06/18 16:38:25 index.go:57: persons sorted by FirstName
+INFO: 2019/06/18 16:38:25 index.go:68: getted persent of Male or Female
+INFO: 2019/06/18 16:38:25 index.go:76: getted persons it LOAN range 300000:600000
+INFO: 2019/06/18 16:38:25 index.go:90: server started
+INFO: 2019/06/18 16:38:54 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:38:54 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:38:54 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:38:54 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 16:38:54 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:38:54 handlers.go:169: successfully.
+
+INFO: 2019/06/18 16:38:54 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:38:54 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 16:38:54 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 16:38:54 handlers.go:137: successfully.
+
+INFO: 2019/06/18 16:38:54 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 16:38:54 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 16:45:31 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:45:31 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:45:31 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 16:45:31 handlers.go:137: successfully.
+
+INFO: 2019/06/18 16:45:31 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:45:31 handlers.go:169: successfully.
+
+INFO: 2019/06/18 16:45:31 handlers.go:16: GET for /persons?name=oleg
+INFO: 2019/06/18 16:45:31 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:45:31 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:45:31 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 16:46:36 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:46:36 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:46:36 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 16:46:36 handlers.go:137: successfully.
+
+INFO: 2019/06/18 16:46:36 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:46:36 handlers.go:169: successfully.
+
+INFO: 2019/06/18 16:46:36 handlers.go:16: GET for /persons?name=Zak
+INFO: 2019/06/18 16:46:36 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:46:36 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:46:36 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 16:50:20 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:50:20 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:50:20 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 16:50:20 handlers.go:137: successfully.
+
+INFO: 2019/06/18 16:50:20 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:50:20 handlers.go:169: successfully.
+
+INFO: 2019/06/18 16:50:20 handlers.go:16: GET for /persons?name=Zak
+INFO: 2019/06/18 16:50:20 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:50:20 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:50:20 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 16:51:10 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:51:10 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:51:10 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 16:51:10 handlers.go:137: successfully.
+
+INFO: 2019/06/18 16:51:10 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:51:10 handlers.go:169: successfully.
+
+INFO: 2019/06/18 16:51:10 handlers.go:16: GET for /persons?name=Zak
+INFO: 2019/06/18 16:51:10 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:51:10 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:51:10 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 16:51:53 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:51:53 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:51:53 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 16:51:53 handlers.go:137: successfully.
+
+INFO: 2019/06/18 16:51:53 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:51:53 handlers.go:169: successfully.
+
+INFO: 2019/06/18 16:51:53 handlers.go:16: GET for /persons?name=Zak
+INFO: 2019/06/18 16:51:53 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:51:53 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:51:53 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 16:52:17 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:52:17 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:52:17 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 16:52:17 handlers.go:137: successfully.
+
+INFO: 2019/06/18 16:52:17 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:52:17 handlers.go:169: successfully.
+
+INFO: 2019/06/18 16:52:17 handlers.go:16: GET for /persons?name=Zak
+INFO: 2019/06/18 16:52:17 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:52:17 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:52:17 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 16:52:52 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:52:52 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:52:52 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 16:52:52 handlers.go:137: successfully.
+
+INFO: 2019/06/18 16:52:52 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:52:52 handlers.go:169: successfully.
+
+INFO: 2019/06/18 16:52:52 handlers.go:16: GET for /persons?name=Zak
+INFO: 2019/06/18 16:52:52 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:52:52 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:52:52 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 16:53:11 handlers.go:83: POST for /persons
+INFO: 2019/06/18 16:53:11 handlers.go:103: successfully
+
+INFO: 2019/06/18 16:53:11 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 16:53:11 handlers.go:137: successfully.
+
+INFO: 2019/06/18 16:53:11 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:53:11 handlers.go:169: successfully.
+
+INFO: 2019/06/18 16:53:11 handlers.go:16: GET for /persons?name=Zak
+INFO: 2019/06/18 16:53:11 handlers.go:72: successfully.
+
+INFO: 2019/06/18 16:53:11 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 16:53:11 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:02:25 index.go:35: trying parse CSV file
+INFO: 2019/06/18 17:02:25 index.go:48: getted person with range from 07/28/2018 to 09/26/2018
+INFO: 2019/06/18 17:02:25 index.go:57: persons sorted by FirstName
+INFO: 2019/06/18 17:02:25 index.go:68: getted persent of Male or Female
+INFO: 2019/06/18 17:02:25 index.go:76: getted persons it LOAN range 300000:600000
+INFO: 2019/06/18 17:02:25 index.go:90: server started
+INFO: 2019/06/18 17:02:28 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:02:28 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:02:28 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:02:28 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:02:28 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:02:28 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:02:28 handlers.go:16: GET for /persons?name=Zak
+INFO: 2019/06/18 17:02:28 handlers.go:72: successfully.
+
+INFO: 2019/06/18 17:02:28 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:02:28 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:04:23 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:04:23 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:04:23 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:04:23 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:04:23 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:04:23 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:04:23 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:04:23 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:04:23 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:04:23 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:04:23 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:04:23 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:05:39 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:05:39 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:05:39 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:05:39 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:05:39 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:05:39 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:05:39 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:05:39 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:05:39 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:05:39 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:05:39 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:05:39 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:05:39 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:05:39 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:06:00 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:06:00 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:06:00 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:06:00 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:06:00 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:06:00 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:06:00 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:06:00 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:06:00 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:06:00 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:06:00 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:06:00 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:06:00 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:06:00 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:06:00 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:06:00 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:07:11 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:07:11 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:07:11 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:07:11 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:07:11 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:07:11 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:07:11 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:07:11 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:07:11 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:07:11 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:07:11 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:07:11 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:07:12 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:07:12 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:07:12 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:07:12 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:08:16 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:08:16 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:08:16 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:08:16 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:08:16 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:08:16 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:08:16 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:08:16 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:08:16 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:08:16 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:08:16 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:08:16 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:08:16 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:08:16 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:09:09 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:09:09 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:09:09 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:09:09 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:09:09 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:09:09 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:09:09 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:09:09 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:09:09 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:09:09 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:09:09 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:09:09 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:09:09 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:09:09 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:10:37 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:10:37 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:10:37 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:10:37 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:10:37 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:10:37 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:10:37 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:10:37 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:10:37 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:10:37 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:10:37 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:10:37 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:10:37 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:10:37 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:10:37 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:10:37 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:12:45 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:12:45 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:12:45 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:12:45 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:12:45 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:12:45 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:12:45 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:12:45 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:12:45 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:12:45 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:12:45 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:12:45 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:12:45 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:12:45 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:14:11 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:14:11 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:14:11 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:14:11 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:14:11 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:14:11 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:14:11 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:14:11 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:14:11 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:14:11 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:14:11 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:14:11 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:14:11 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:14:11 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:15:00 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:15:00 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:15:00 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:15:00 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:15:00 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:15:00 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:15:00 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:15:00 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:15:00 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:15:00 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:15:00 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:15:00 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:15:00 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:15:00 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:15:53 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:15:53 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:15:53 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:15:53 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:15:53 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:15:53 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:15:53 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:15:53 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:15:53 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:15:53 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:15:53 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:15:53 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:15:53 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:15:53 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:16:05 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:16:05 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:16:05 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:16:05 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:16:05 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:16:05 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:16:05 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:16:05 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:16:05 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:16:05 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:16:05 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:16:05 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:16:05 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:16:05 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:16:56 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:16:56 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:16:56 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:16:56 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:16:56 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:16:56 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:16:56 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:16:56 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:16:56 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:16:56 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:16:56 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:16:56 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:16:56 handlers.go:16: GET for /persons?ass=ZakZakMotherFucker&toDate=fucker
+INFO: 2019/06/18 17:16:56 handlers.go:58: unsuccessfully.
+
+INFO: 2019/06/18 17:19:12 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:19:12 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:19:12 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:19:12 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:19:12 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:19:12 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:19:12 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:19:12 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:19:12 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:19:12 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:19:12 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:19:12 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 17:19:36 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:19:36 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:19:36 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:19:36 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:19:36 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:19:37 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:19:37 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:19:37 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:19:37 handlers.go:111: POST for /persons?id=117
+INFO: 2019/06/18 17:19:37 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:19:37 handlers.go:111: POST for /persons?ighjd=117
+INFO: 2019/06/18 17:19:37 handlers.go:116: unsuccessfully.
+

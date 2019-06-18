@@ -21,6 +21,8 @@ func main() {
 	fmt.Println(DeleteTest())
 	fmt.Println(UpdateTest())
 	fmt.Println(GetTest())
+	//fmt.Println(len(AddingUncTest()))
+	fmt.Println(UpdateUncTest())
 }
 
 func AddingTest() string{
@@ -32,6 +34,16 @@ func AddingTest() string{
 		Loan:      254.3,
 	}
 	personJSON, _ := json.Marshal(person)
+	resp, err := http.Post("http://localhost:1234/persons", "application/json", bytes.NewReader(personJSON))
+	if err != nil {
+		fmt.Println(err)
+	}
+	body, _ := ioutil.ReadAll(resp.Body)
+	return string(body)
+}
+
+func AddingUncTest() string{
+	personJSON, _ := json.Marshal("duhweojheoewhoi")
 	resp, err := http.Post("http://localhost:1234/persons", "application/json", bytes.NewReader(personJSON))
 	if err != nil {
 		fmt.Println(err)
@@ -62,6 +74,50 @@ func DeleteTest() string{
 	return "q"
 }
 
+func DeleteUncTest() string{
+	//id := "117"
+	//resp, err := http.Post("http://localhost:1234/delete", "application/json", bytes.NewReader([]byte(id)))
+	//if err != nil {
+	//	fmt.Println(err)
+	//}
+	//body, _ := ioutil.ReadAll(resp.Body)
+	//return string(body)
+	//idJSON, _ := json.Marshal(id)
+	client := &http.Client{}
+	req, err := http.NewRequest(
+		"DELETE", "http://localhost:1234/persons?ighjd=117", nil,
+	)
+	resp, err := client.Do(req)
+	if err != nil {
+		fmt.Println(err)
+	}
+	body, _ := ioutil.ReadAll(resp.Body)
+	return string(body)
+	return "q"
+}
+
+func UpdateUncTest() string{
+	type IDEmail struct {
+		ID     string    `json:"id"`
+		Jopa string
+	}
+	idEmail := IDEmail{
+		ID: "j113k",
+		Jopa: "BigAss",
+	}
+	idPersonJSON, _ := json.Marshal(idEmail)
+	client := &http.Client{}
+	req, err := http.NewRequest(
+		"PUT", "http://localhost:1234/persons", bytes.NewReader(idPersonJSON),
+	)
+	resp, err := client.Do(req)
+	if err != nil {
+		fmt.Println(err)
+	}
+	body, _ := ioutil.ReadAll(resp.Body)
+	return string(body)
+}
+
 func UpdateTest() string{
 	type IDEmail struct {
 		ID     int    `json:"id"`
@@ -85,7 +141,16 @@ func UpdateTest() string{
 }
 
 func GetTest() string{
-	resp, err := http.Get("http://localhost:1234/persons?name=oleg")
+	resp, err := http.Get("http://localhost:1234/persons?name=Zak")
+	if err != nil {
+		fmt.Println(err)
+	}
+	body, _ := ioutil.ReadAll(resp.Body)
+	return string(body)
+}
+
+func GetUncTest() string{
+	resp, err := http.Get("http://localhost:1234/persons?ass=ZakZakMotherFucker&toDate=fucker")
 	if err != nil {
 		fmt.Println(err)
 	}

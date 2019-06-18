@@ -53,7 +53,8 @@ func GetPersonHandler(w http.ResponseWriter, r *http.Request) {
 		validPersons, err = validPersons.GetInRegisterRange(fromDate, "12/31/3000")
 	}
 	if err != nil {
-		http.Error(w, "uncorrect date form", http.StatusNotFound)
+		//http.Error(w, "uncorrect date form", http.StatusNotFound)
+		w.Write([]byte("uncorrect date form111"))
 		logger.Debug.Println( "unsuccessfully.\n")
 		logger.Info.Println( "unsuccessfully.\n")
 		logger.Error.Println("GET for", r.RequestURI,  " ---", err, "---")
@@ -82,7 +83,8 @@ func AddPersonHandler(w http.ResponseWriter, r *http.Request) {
 	logger.Debug.Print("POST for", r.RequestURI, "\n User agent: ", r.UserAgent(), "/n Body: ", person)
 	logger.Info.Println("POST for", r.URL)
 	if err != nil {
-		http.Error(w, "uncorrect format", http.StatusBadRequest)
+		//http.Error(w, "uncorrect format", http.StatusBadRequest)
+		w.Write([]byte("uncorrect format"))
 		logger.Debug.Println("unsuccessfully.\n")
 		logger.Info.Println("unsuccessfully.\n")
 		logger.Error.Println("POST with body ", person, "to", r.RequestURI, " ---", err, "---")
@@ -109,7 +111,8 @@ func DeletePersonHandler(w http.ResponseWriter, r *http.Request) {
 	logger.Debug.Print("POST for", r.RequestURI, "\n User agent: ", r.UserAgent(), "/n Body: ", id)
 	logger.Info.Println("POST for", r.URL)
 	if err != nil {
-		http.Error(w, "Uncorrect format -", http.StatusBadRequest)
+		//http.Error(w, "Uncorrect format -", http.StatusBadRequest)
+		w.Write([]byte("uncorrect format"))
 		logger.Debug.Println("unsuccessfully.\n")
 		logger.Info.Println("unsuccessfully.\n")
 		logger.Error.Println("POST with body ", id, "to", r.RequestURI, "---", err, "---")
@@ -147,7 +150,8 @@ func UpdatePersonHandler(w http.ResponseWriter, r *http.Request) {
 	logger.Debug.Print("PUT for", r.RequestURI, "\n User agent: ", r.UserAgent(), "/n Body: ", idEmail)
 	logger.Info.Println("PUT for", r.URL)
 	if err != nil {
-		http.Error(w, "Something wrong", 418)
+		//http.Error(w, "Something wrong", 418)
+		w.Write([]byte("Something wrong"))
 		logger.Debug.Println("unsuccessfully.\n")
 		logger.Info.Println("unsuccessfully.\n")
 		logger.Error.Println("PUT with body ", idEmail, "to", r.RequestURI, "---", err, "---")
@@ -165,8 +169,4 @@ func UpdatePersonHandler(w http.ResponseWriter, r *http.Request) {
 	logger.Debug.Println("successfully.\n")
 	logger.Info.Println("successfully.\n")
 	w.Write([]byte("update succeseful"))
-}
-
-func RouteHandlers(w http.ResponseWriter, r *http.Request){
-
 }
