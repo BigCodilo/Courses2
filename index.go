@@ -5,10 +5,8 @@ import (
 	"github.com/BigCodilo/Courses2/logger"
 	"github.com/BigCodilo/Courses2/logic"
 	"fmt"
-	"log"
 	"net/http"
 	"github.com/gorilla/mux"
-	"os"
 )
 
 var DB interactionDB.DataBase
@@ -16,7 +14,7 @@ var DB interactionDB.DataBase
 func main() {
 	err := logger.SetLoggers()
 	if err != nil{
-		log.Println("Can't set logger to file")
+		logger.Error.Println("Can't set logger to file")
 	}
 	DB = interactionDB.DataBase{}
 	err = DB.Open()

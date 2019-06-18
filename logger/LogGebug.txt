@@ -32,3 +32,39 @@ DEBUG: 2019/06/18 18:28:40 handlers.go:15: GET for/persons?name=oleg
  Cookies: [__io=477128cae.bb9b1f883_1548638926752 __io_lv=1548638926752 __io_unique_36028=28 _ga=GA1.1.1908184127.1548638927 _ym_d=1548638927 _ym_uid=1548638927373917260 used_adblock=adblock_disabled optimizelyEndUserId=oeu1551447958792r0.06336616828202613 csrftoken=WX3a7gerxNWUdUUFN9wykQPDBFCChSNMnjcD8RxWqrGyTi7WxdUgYLGhoxGSPlG2]
 DEBUG: 2019/06/18 18:28:40 handlers.go:72: successfully.
 
+DEBUG: 2019/06/18 23:53:28 handlers.go:82: POST for/persons
+ User agent: Go-http-client/1.1
+ Body: &{0 oleg1111 osyka olegosyka@gmail.com Male 0 0001-01-01 00:00:00 +0000 UTC 254.3}
+ Cookies: []
+DEBUG: 2019/06/18 23:53:30 handlers.go:102: successfully
+
+DEBUG: 2019/06/18 23:53:30 handlers.go:82: POST for/persons
+ User agent: Go-http-client/1.1
+ Body: &{0     0 0001-01-01 00:00:00 +0000 UTC 0}
+ Cookies: []
+DEBUG: 2019/06/18 23:53:30 handlers.go:87: unsuccessfully.
+
+DEBUG: 2019/06/18 23:53:30 handlers.go:149: PUT for/persons
+ User agent: Go-http-client/1.1
+ Body: {113 qweqweqwewqeqweqeqwewqewqewqeqwe}
+ Cookies: []
+DEBUG: 2019/06/18 23:53:30 handlers.go:168: successfully.
+
+DEBUG: 2019/06/18 23:53:30 handlers.go:149: PUT for/persons
+ User agent: Go-http-client/1.1
+ Body: {0 }
+ Cookies: []
+DEBUG: 2019/06/18 23:53:30 handlers.go:154: unsuccessfully.
+
+DEBUG: 2019/06/18 23:53:30 handlers.go:110: DELETE for/persons?id=117
+ User agent: Go-http-client/1.1
+ Body: 117
+ Cookies: []
+DEBUG: 2019/06/18 23:53:30 handlers.go:136: successfully.
+
+DEBUG: 2019/06/18 23:53:30 handlers.go:110: DELETE for/persons?ighjd=117
+ User agent: Go-http-client/1.1
+ Body: 0
+ Cookies: []
+DEBUG: 2019/06/18 23:53:30 handlers.go:115: unsuccessfully.
+
