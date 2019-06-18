@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cee48294-d7d7-4355-b269-37b811b036bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/infoDebug.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/infoDebug.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/infoError.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/infoError.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger/infoLogger.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logger/infoLogger.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testAPI/testapi.go" beforeDir="false" afterPath="$PROJECT_DIR$/testAPI/testapi.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testAPI/testapi_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/testAPI/testapi_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logger/infoError.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="243">
@@ -90,12 +82,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="400">
-                <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <first_editor>
+                <caret column="80" selection-start-column="80" selection-end-column="80" />
               </first_editor>
               <second_editor />
             </state>
@@ -171,10 +163,10 @@
         <option value="$USER_HOME$/go/src/github.com/BigCodilo/Courses2/logic/personLogic.go" />
         <option value="$PROJECT_DIR$/index.go" />
         <option value="$USER_HOME$/go/src/github.com/BigCodilo/Courses2/interactionDB/personsCRUD.go" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/testAPI/testapi.go" />
         <option value="$PROJECT_DIR$/testAPI/testapi_test.go" />
         <option value="$PROJECT_DIR$/handlers.go" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -352,16 +344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="400">
-            <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interactionDB/personsCRUD.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -403,13 +385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logger/infoLogger.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logger/infoDebug.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10846">
@@ -434,6 +409,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="73" column="58" lean-forward="true" selection-start-line="73" selection-start-column="58" selection-end-line="73" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logger/infoLogger.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="80" selection-start-column="80" selection-end-column="80" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
