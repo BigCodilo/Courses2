@@ -1,30 +1,5 @@
-INFO: 2019/06/16 10:25:37 index.go:34: trying parse CSV file
-INFO: 2019/06/16 10:25:37 index.go:47: getted person with range from 07/28/2018 to 09/26/2018
-INFO: 2019/06/16 10:25:37 index.go:56: persons sorted by FirstName
-INFO: 2019/06/16 10:25:37 index.go:67: getted persent of Male or Female
-INFO: 2019/06/16 10:25:37 index.go:75: getted persons it LOAN range 300000:600000
-INFO: 2019/06/16 10:25:37 index.go:88: server started
-INFO: 2019/06/16 10:28:30 index.go:34: trying parse CSV file
-INFO: 2019/06/16 10:28:30 index.go:47: getted person with range from 07/28/2018 to 09/26/2018
-INFO: 2019/06/16 10:28:30 index.go:56: persons sorted by FirstName
-INFO: 2019/06/16 10:28:30 index.go:67: getted persent of Male or Female
-INFO: 2019/06/16 10:28:31 index.go:75: getted persons it LOAN range 300000:600000
-INFO: 2019/06/16 10:28:31 index.go:88: server started
-INFO: 2019/06/16 10:31:37 index.go:34: trying parse CSV file
-INFO: 2019/06/16 10:31:37 index.go:47: getted person with range from 07/28/2018 to 09/26/2018
-INFO: 2019/06/16 10:31:37 index.go:56: persons sorted by FirstName
-INFO: 2019/06/16 10:31:37 index.go:67: getted persent of Male or Female
-INFO: 2019/06/16 10:31:37 index.go:75: getted persons it LOAN range 300000:600000
-INFO: 2019/06/16 10:31:38 index.go:88: server started
-INFO: 2019/06/16 10:33:35 index.go:34: trying parse CSV file
-INFO: 2019/06/16 10:33:35 index.go:47: getted person with range from 07/28/2018 to 09/26/2018
-INFO: 2019/06/16 10:33:35 index.go:56: persons sorted by FirstName
-INFO: 2019/06/16 10:33:35 index.go:67: getted persent of Male or Female
-INFO: 2019/06/16 10:33:35 index.go:75: getted persons it LOAN range 300000:600000
-INFO: 2019/06/16 10:33:35 index.go:88: server started
-INFO: 2019/06/16 10:33:37 handlers.go:14: GET for GET
-INFO: 2019/06/16 10:33:37 handlers.go:77: successfully.
 
+<<<<<<< HEAD
 INFO: 2019/06/16 10:33:38 handlers.go:14: GET for GET
 INFO: 2019/06/16 10:33:38 handlers.go:77: successfully.
 
@@ -1235,3 +1210,5 @@ INFO: 2019/06/18 18:10:55 handlers.go:73: successfully.
 INFO: 2019/06/18 18:10:55 handlers.go:150: PUT for /persons
 INFO: 2019/06/18 18:10:55 handlers.go:155: unsuccessfully.
 
+=======
+>>>>>>> 9e0b2e6a63991ffd48be91e2eb3e028d96dbd57b

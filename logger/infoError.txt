@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ERROR: 2019/06/16 11:38:34 handlers.go:65: GET for /persons?name=o5leg  --- <nil> ---
 ERROR: 2019/06/16 11:40:00 handlers.go:65: GET for /persons?name=o5leg  --- <nil> ---
 ERROR: 2019/06/17 12:11:33 handlers.go:65: GET for /persons?name=o5leg  --- <nil> ---
@@ -108,3 +109,6 @@ ERROR: 2019/06/18 18:10:48 handlers.go:89: POST with body  &{0     0 0001-01-01 
 ERROR: 2019/06/18 18:10:48 handlers.go:156: PUT with body  {0 } to /persons --- json: cannot unmarshal string into Go struct field IDEmail.id of type int ---
 ERROR: 2019/06/18 18:10:48 handlers.go:117: POST with body  0 to /persons?ighjd=117 --- strconv.Atoi: parsing "": invalid syntax ---
 ERROR: 2019/06/18 18:10:55 handlers.go:156: PUT with body  {0 } to /persons --- json: cannot unmarshal string into Go struct field IDEmail.id of type int ---
+=======
+
+>>>>>>> 9e0b2e6a63991ffd48be91e2eb3e028d96dbd57b
