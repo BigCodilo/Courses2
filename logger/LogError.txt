@@ -1,0 +1,1 @@
+ERROR: 2019/06/18 18:22:58 handlers.go:156: PUT with body  {0 } to /persons --- json: cannot unmarshal string into Go struct field IDEmail.id of type int ---
