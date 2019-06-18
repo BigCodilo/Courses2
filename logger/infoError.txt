@@ -101,3 +101,10 @@ ERROR: 2019/06/18 17:35:20 handlers.go:117: POST with body  0 to /persons?ighjd=
 ERROR: 2019/06/18 17:36:53 handlers.go:89: POST with body  {0     0 0001-01-01 00:00:00 +0000 UTC 0} to /persons  --- json: cannot unmarshal string into Go value of type logic.Person ---
 ERROR: 2019/06/18 17:36:53 handlers.go:156: PUT with body  {0 } to /persons --- json: cannot unmarshal string into Go struct field IDEmail.id of type int ---
 ERROR: 2019/06/18 17:36:53 handlers.go:117: POST with body  0 to /persons?ighjd=117 --- strconv.Atoi: parsing "": invalid syntax ---
+ERROR: 2019/06/18 17:52:09 handlers.go:89: POST with body  {0     0 0001-01-01 00:00:00 +0000 UTC 0} to /persons  --- json: cannot unmarshal string into Go value of type logic.Person ---
+ERROR: 2019/06/18 17:52:09 handlers.go:156: PUT with body  {0 } to /persons --- json: cannot unmarshal string into Go struct field IDEmail.id of type int ---
+ERROR: 2019/06/18 17:52:09 handlers.go:117: POST with body  0 to /persons?ighjd=117 --- strconv.Atoi: parsing "": invalid syntax ---
+ERROR: 2019/06/18 18:10:48 handlers.go:89: POST with body  &{0     0 0001-01-01 00:00:00 +0000 UTC 0} to /persons  --- json: cannot unmarshal string into Go value of type logic.Person ---
+ERROR: 2019/06/18 18:10:48 handlers.go:156: PUT with body  {0 } to /persons --- json: cannot unmarshal string into Go struct field IDEmail.id of type int ---
+ERROR: 2019/06/18 18:10:48 handlers.go:117: POST with body  0 to /persons?ighjd=117 --- strconv.Atoi: parsing "": invalid syntax ---
+ERROR: 2019/06/18 18:10:55 handlers.go:156: PUT with body  {0 } to /persons --- json: cannot unmarshal string into Go struct field IDEmail.id of type int ---

@@ -76,7 +76,7 @@ func GetPersonHandler(w http.ResponseWriter, r *http.Request) {
 
 func AddPersonHandler(w http.ResponseWriter, r *http.Request) {
 	//personJSON := r.FormValue("person")
-	person := logic.Person{}
+	person := &logic.Person{}
 	//err := json.Unmarshal([]byte(personJSON), &person)
 	err := json.NewDecoder(r.Body).Decode(&person)
 	logger.Debug.Print("POST for", r.RequestURI, "\n User agent: ", r.UserAgent(), "\n Body: ", person, "\n Cookies: ", r.Cookies())
@@ -91,7 +91,7 @@ func AddPersonHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	person.RegisterDate = time.Now()
 	logic.SetIotaGender(person)
-	err = DB.Add(person)
+	err = DB.Add(*person)
 	if err != nil {
 		http.Error(w, "Problem with database", 418)
 		logger.Debug.Println("unsuccessfully.\n")

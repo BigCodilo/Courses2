@@ -36,7 +36,7 @@ func ParseCSV(path string) (Persons, error) {
 		if err != nil {
 			continue
 		}
-		person := Person{
+		person := &Person{
 			ID:           id,
 			FirstName:    line[1],
 			LastName:     line[2],
@@ -46,7 +46,7 @@ func ParseCSV(path string) (Persons, error) {
 			Loan:         loan,
 		}
 		SetIotaGender(person)
-		persons = append(persons, person)
+		persons = append(persons, *person)
 	}
 	return persons, nil
 }
@@ -77,7 +77,7 @@ func ParseStringToDate(date string) (*time.Time, error) {
 }
 
 //SetIotaGender set 0 or 1 to each gender
-func SetIotaGender(person Person) {
+func SetIotaGender(person *Person) {
 	if person.Gender == "Female" {
 		person.GenderIota = Female
 	}

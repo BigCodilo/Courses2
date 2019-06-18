@@ -1172,3 +1172,66 @@ INFO: 2019/06/18 17:37:36 index.go:57: persons sorted by FirstName
 INFO: 2019/06/18 17:37:36 index.go:68: getted persent of Male or Female
 INFO: 2019/06/18 17:37:36 index.go:76: getted persons it LOAN range 300000:600000
 INFO: 2019/06/18 17:37:36 index.go:90: server started
+INFO: 2019/06/18 17:52:07 index.go:35: trying parse CSV file
+INFO: 2019/06/18 17:52:07 index.go:48: getted person with range from 07/28/2018 to 09/26/2018
+INFO: 2019/06/18 17:52:07 index.go:57: persons sorted by FirstName
+INFO: 2019/06/18 17:52:07 index.go:68: getted persent of Male or Female
+INFO: 2019/06/18 17:52:07 index.go:76: getted persons it LOAN range 300000:600000
+INFO: 2019/06/18 17:52:07 index.go:90: server started
+INFO: 2019/06/18 17:52:09 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:52:09 handlers.go:103: successfully
+
+INFO: 2019/06/18 17:52:09 handlers.go:83: POST for /persons
+INFO: 2019/06/18 17:52:09 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 17:52:09 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:52:09 handlers.go:169: successfully.
+
+INFO: 2019/06/18 17:52:09 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 17:52:09 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 17:52:09 handlers.go:111: DELETE for /persons?id=117
+INFO: 2019/06/18 17:52:09 handlers.go:137: successfully.
+
+INFO: 2019/06/18 17:52:09 handlers.go:111: DELETE for /persons?ighjd=117
+INFO: 2019/06/18 17:52:09 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 18:10:28 index.go:35: trying parse CSV file
+INFO: 2019/06/18 18:10:28 index.go:48: getted person with range from 07/28/2018 to 09/26/2018
+INFO: 2019/06/18 18:10:28 index.go:57: persons sorted by FirstName
+INFO: 2019/06/18 18:10:28 index.go:68: getted persent of Male or Female
+INFO: 2019/06/18 18:10:28 index.go:76: getted persons it LOAN range 300000:600000
+INFO: 2019/06/18 18:10:28 index.go:90: server started
+INFO: 2019/06/18 18:10:48 handlers.go:83: POST for /persons
+INFO: 2019/06/18 18:10:48 handlers.go:103: successfully
+
+INFO: 2019/06/18 18:10:48 handlers.go:83: POST for /persons
+INFO: 2019/06/18 18:10:48 handlers.go:88: unsuccessfully.
+
+INFO: 2019/06/18 18:10:48 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 18:10:48 handlers.go:169: successfully.
+
+INFO: 2019/06/18 18:10:48 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 18:10:48 handlers.go:155: unsuccessfully.
+
+INFO: 2019/06/18 18:10:48 handlers.go:111: DELETE for /persons?id=117
+INFO: 2019/06/18 18:10:48 handlers.go:137: successfully.
+
+INFO: 2019/06/18 18:10:48 handlers.go:111: DELETE for /persons?ighjd=117
+INFO: 2019/06/18 18:10:48 handlers.go:116: unsuccessfully.
+
+INFO: 2019/06/18 18:10:55 handlers.go:83: POST for /persons
+INFO: 2019/06/18 18:10:55 handlers.go:103: successfully
+
+INFO: 2019/06/18 18:10:55 handlers.go:111: DELETE for /persons?id=117
+INFO: 2019/06/18 18:10:55 handlers.go:137: successfully.
+
+INFO: 2019/06/18 18:10:55 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 18:10:55 handlers.go:169: successfully.
+
+INFO: 2019/06/18 18:10:55 handlers.go:16: GET for /persons?name=Zak
+INFO: 2019/06/18 18:10:55 handlers.go:73: successfully.
+
+INFO: 2019/06/18 18:10:55 handlers.go:150: PUT for /persons
+INFO: 2019/06/18 18:10:55 handlers.go:155: unsuccessfully.
+
