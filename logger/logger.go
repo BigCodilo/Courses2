@@ -1,7 +1,6 @@
 package logger
 
 import (
-	"fmt"
 	"log"
 	"os"
 )
@@ -12,21 +11,24 @@ var (
 	Debug *log.Logger
 )
 
-func SetLoggers() {
+func SetLoggers() error{
 	fileInfo, err := os.OpenFile("logger/LogInfo.txt", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil{
-		fmt.Println("333333333", err)
+		Info.SetOutput(os.Stdout)
+		return err
 	}
 	Info = log.New(fileInfo, "INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
 	fileError, err := os.OpenFile("logger/LogError.txt", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil{
-		fmt.Println("222222222222222", err)
+		Error.SetOutput(os.Stdout)
+		return err
 	}
 	Error = log.New(fileError, "ERROR: ", log.Ldate|log.Ltime|log.Lshortfile)
 	fileDebug, err := os.OpenFile("logger/LogGebug.txt", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil{
-		fmt.Println("1111111111111", err)
+		Debug.SetOutput(os.Stdout)
+		return err
 	}
 	Debug = log.New(fileDebug, "DEBUG: ", log.Ldate|log.Ltime|log.Lshortfile)
-	
+	return nil
 }

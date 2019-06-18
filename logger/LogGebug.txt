@@ -27,3 +27,8 @@ DEBUG: 2019/06/18 18:22:58 handlers.go:149: PUT for/persons
  Cookies: []
 DEBUG: 2019/06/18 18:22:58 handlers.go:154: unsuccessfully.
 
+DEBUG: 2019/06/18 18:28:40 handlers.go:15: GET for/persons?name=oleg
+ User agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+ Cookies: [__io=477128cae.bb9b1f883_1548638926752 __io_lv=1548638926752 __io_unique_36028=28 _ga=GA1.1.1908184127.1548638927 _ym_d=1548638927 _ym_uid=1548638927373917260 used_adblock=adblock_disabled optimizelyEndUserId=oeu1551447958792r0.06336616828202613 csrftoken=WX3a7gerxNWUdUUFN9wykQPDBFCChSNMnjcD8RxWqrGyTi7WxdUgYLGhoxGSPlG2]
+DEBUG: 2019/06/18 18:28:40 handlers.go:72: successfully.
+
