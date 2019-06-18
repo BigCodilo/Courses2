@@ -12,7 +12,7 @@ import (
 
 
 func GetPersonHandler(w http.ResponseWriter, r *http.Request) {
-	logger.Debug.Print("GET for", r.RequestURI, "\n User agent: ", r.UserAgent())
+	logger.Debug.Print("GET for", r.RequestURI, "\n User agent: ", r.UserAgent(),  "\n Cookies: ", r.Cookies())
 	logger.Info.Println("GET for", r.URL)
 	name := r.URL.Query().Get("name")
 	fromDate := r.URL.Query().Get("fromDate")
@@ -75,12 +75,11 @@ func GetPersonHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func AddPersonHandler(w http.ResponseWriter, r *http.Request) {
-
 	//personJSON := r.FormValue("person")
 	person := logic.Person{}
 	//err := json.Unmarshal([]byte(personJSON), &person)
 	err := json.NewDecoder(r.Body).Decode(&person)
-	logger.Debug.Print("POST for", r.RequestURI, "\n User agent: ", r.UserAgent(), "/n Body: ", person)
+	logger.Debug.Print("POST for", r.RequestURI, "\n User agent: ", r.UserAgent(), "\n Body: ", person, "\n Cookies: ", r.Cookies())
 	logger.Info.Println("POST for", r.URL)
 	if err != nil {
 		//http.Error(w, "uncorrect format", http.StatusBadRequest)
@@ -108,8 +107,8 @@ func AddPersonHandler(w http.ResponseWriter, r *http.Request) {
 func DeletePersonHandler(w http.ResponseWriter, r *http.Request) {
 	idS := r.URL.Query().Get("id")
 	id, err := strconv.Atoi(idS)
-	logger.Debug.Print("POST for", r.RequestURI, "\n User agent: ", r.UserAgent(), "/n Body: ", id)
-	logger.Info.Println("POST for", r.URL)
+	logger.Debug.Print("DELETE for", r.RequestURI, "\n User agent: ", r.UserAgent(), "\n Body: ", id,  "\n Cookies: ", r.Cookies())
+	logger.Info.Println("DELETE for", r.URL)
 	if err != nil {
 		//http.Error(w, "Uncorrect format -", http.StatusBadRequest)
 		w.Write([]byte("uncorrect format"))
@@ -147,7 +146,7 @@ func UpdatePersonHandler(w http.ResponseWriter, r *http.Request) {
 	idEmail := IDEmail{}
 
 	err := json.NewDecoder(r.Body).Decode(&idEmail)
-	logger.Debug.Print("PUT for", r.RequestURI, "\n User agent: ", r.UserAgent(), "/n Body: ", idEmail)
+	logger.Debug.Print("PUT for", r.RequestURI, "\n User agent: ", r.UserAgent(), "\n Body: ", idEmail,  "\n Cookies: ", r.Cookies())
 	logger.Info.Println("PUT for", r.URL)
 	if err != nil {
 		//http.Error(w, "Something wrong", 418)
